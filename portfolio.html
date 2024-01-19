@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Portfolio: Kent McDermid</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1> Kent McDermid</h1>
+			</header>
+			<nav class="module">
+				<ul> 
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a><li>
+					<li><a href="portfolio.html">Portfolio</a><li>
+					<li><a href="interest.html">Engineering</a><li>
+				</ul>
+			</nav>
+			<main>
+				<div id="leftcontent" class="GradientBorder">
+					<h2 style="font-size: 45px;">Portfolio</h2>
+                
+			
+					<h2>Variables Assignment</h2>
+                    <!-- HTML generated using hilite.me --><div class="scroll"  style="background: #ffffff; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important; height:775px; width:auto;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</pre></td><td><pre style="margin: 0; line-height: 125%"> <span style="color: #008800; font-weight: bold">while</span> (<span style="color: #007020">true</span>) {
+        cout <span style="color: #333333">&lt;&lt;</span><span style="background-color: #fff0f0">&quot;Do you wish to find out the total price of an item after tax (AT) OR The original price of an item before tax (BT): &quot;</span>;
+        cin <span style="color: #333333">&gt;&gt;</span> strUserInput;
+
+        <span style="color: #888888">//First if statement, based on the inital user input, calculates the user input after taxes</span>
+        <span style="color: #008800; font-weight: bold">if</span> (strUserInput <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;AT&quot;</span>) {
+            
+            <span style="color: #888888">//Getting number inputs from the user</span>
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Please enter a number the price of the item before tax: &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> numUserInput;
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Thank you, now please enter the provincial tax (without the % symbol): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> provincialTax;
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Thank you, now please enter the federal tax (without the % symbol): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> federalTax;
+            
+            <span style="color: #888888">//Tax calculations (after taxes)</span>
+            totalTax <span style="color: #333333">=</span> provincialTax <span style="color: #333333">+</span> federalTax;
+            provincialPrice <span style="color: #333333">=</span> numUserInput <span style="color: #333333">*</span> (provincialTax<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">100</span> <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+            federalPrice <span style="color: #333333">=</span> numUserInput <span style="color: #333333">*</span> (federalTax<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">100</span> <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+            totalPrice <span style="color: #333333">=</span> numUserInput <span style="color: #333333">*</span> (totalTax<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">100</span> <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+            
+            <span style="color: #888888">//Output of the final calculations to the user with set precision</span>
+            cout <span style="color: #333333">&lt;&lt;</span> fixed;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;The price with provincial tax is $&quot;</span> <span style="color: #333333">&lt;&lt;</span> setprecision(<span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&lt;&lt;</span> provincialPrice <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;The price with federal tax is $&quot;</span> <span style="color: #333333">&lt;&lt;</span> setprecision(<span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&lt;&lt;</span> federalPrice <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;The price with total tax is $&quot;</span> <span style="color: #333333">&lt;&lt;</span> setprecision(<span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&lt;&lt;</span> totalPrice <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            
+            <span style="color: #888888">//Ends the while loop, completing the program</span>
+            <span style="color: #008800; font-weight: bold">break</span>;
+        }
+        
+        <span style="color: #888888">//Second if statement, also based on the initial user input, calculates the user&#39;s input before taxes</span>
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (strUserInput <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;BT&quot;</span>){
+            
+            <span style="color: #888888">//Getting number inputs from the user</span>
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Please enter a number the price of the item after tax: &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> numUserInput;
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Thank you, now please enter the provincial tax(without the % symbol): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> provincialTax;
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Thank you, now please enter the federal tax (without the % symbol): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> federalTax;
+            
+            <span style="color: #888888">//Tax calculations (before taxes)</span>
+            totalTax <span style="color: #333333">=</span> provincialTax <span style="color: #333333">+</span> federalTax;
+            provincialPrice <span style="color: #333333">=</span> numUserInput <span style="color: #333333">/</span> (provincialTax<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">100</span> <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+            federalPrice <span style="color: #333333">=</span> numUserInput <span style="color: #333333">/</span> (federalTax<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">100</span> <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+            totalPrice <span style="color: #333333">=</span> numUserInput <span style="color: #333333">/</span> (totalTax<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">100</span> <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>);
+            
+            <span style="color: #888888">//Output of the final calculations to the user with set precision</span>
+            cout <span style="color: #333333">&lt;&lt;</span> fixed;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;The price minus the  provincial tax is $&quot;</span> <span style="color: #333333">&lt;&lt;</span> setprecision(<span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&lt;&lt;</span> provincialPrice <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;The price minus federal tax is $&quot;</span> <span style="color: #333333">&lt;&lt;</span> setprecision(<span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&lt;&lt;</span> federalPrice <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;The original price is $&quot;</span> <span style="color: #333333">&lt;&lt;</span> setprecision(<span style="color: #0000DD; font-weight: bold">2</span>) <span style="color: #333333">&lt;&lt;</span> totalPrice <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+        
+            <span style="color: #888888">//Ends the while loop, completing the program</span>
+            <span style="color: #008800; font-weight: bold">break</span>;
+        }
+        <span style="color: #888888">//Else statement just in case the user enters an invalid input on the *initial* input</span>
+        <span style="color: #008800; font-weight: bold">else</span> {
+           <span style="color: #888888">//tells the user their input was invalid and sends them to the begining of the loop</span>
+           cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Invalid Input Please Try Again!</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+        }
+        
+    }
+</pre></td></tr></table></div>
+
+
+					<h2> Scary Door </h2>
+					<!-- HTML generated using hilite.me --><div class="scroll"  style="background: #ffffff; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important; height:615px; width:auto;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121</pre></td><td><pre style="margin: 0; line-height: 125%">  <span style="color: #008800; font-weight: bold">while</span> (loopAgain <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;Y&#39;</span> <span style="color: #333333">||</span> loopAgain <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;y&#39;</span>) {
+
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">As you are walking in the woods at night, you stumble upon 3 doors, they look pretty scary but your curiosity makes you want to open one.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+        
+        <span style="color: #888888">//Gets the user&#39;s choice for their door</span>
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">What door do you pick (A/B/C): &quot;</span>;
+        cin <span style="color: #333333">&gt;&gt;</span> doorInput;
+        
+        
+        <span style="color: #888888">//If the user chose door A this code will run, giving them another option</span>
+        <span style="color: #008800; font-weight: bold">if</span> (doorInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;A&#39;</span>){
+            
+            
+            <span style="color: #888888">//Gets the input of their second option</span>
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You have chosen door A, you have a choice of another door with a skull on it or a door with a dollar sign inscribed in it, which do you choose?(A/B): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> doorAInput;
+            
+            <span style="color: #888888">//Based on that input outputs text and sets the userWin variable to either true or false</span>
+            <span style="color: #008800; font-weight: bold">if</span> (doorAInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;A&#39;</span>){
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You have chosen the skull door, as you walk in you feel yourself disapearing, you see the memories of you in everyone who knew you start to fade away, you no longer exist, and you never did.  </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                userWin <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+            }
+           <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (doorAInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;B&#39;</span>){
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You have let greed get the better of you, as you see trillions of dollars fall around you, you feel your soul being taken from you, your lifespan has been shortened to 6 hours. You also realise the forest has closed up and there is no escape, all you can do is sit and wait too die alone, as the richest person on the planet.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                userWin <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+            }
+            <span style="color: #888888">//If the user does not input A or B, this will run, restarting the loop</span>
+            <span style="color: #008800; font-weight: bold">else</span>{
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Invalid input, please try again</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                <span style="color: #008800; font-weight: bold">continue</span>;
+            }
+            
+        }
+        <span style="color: #888888">//If the user chose door B this code will run, giving them another option</span>
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (doorInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;B&#39;</span>){
+            
+            
+
+            
+            <span style="color: #888888">//Gets the input of their second option</span>
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You have chosen door B, you see a door with a flower on it and a door with an hour glass on it, which do you choose?(A/B): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> doorBInput;
+            
+            <span style="color: #888888">//Based on that input outputs text and sets the userWin variable to either true or false</span>
+            <span style="color: #008800; font-weight: bold">if</span> (doorBInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;A&#39;</span>){
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You open the door with a flower on it, roots sprout through the ground, tangling you up, you have become nutrients for the earth now, never to be seen again,. </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                userWin <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+            }
+            <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (doorBInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;B&#39;</span>){
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">As you walk through the door with the hour glass on it, you see the same situation again except the other door and the surroundings are all gone, and your only option is to go through the hourglass door again, this loop repeats, after weeks you notice that you don&#39;t feel hungry or thirsty, there is no escape, you are doomed to keep looping forever.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                userWin <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+            }
+            <span style="color: #888888">//If the user does not input A or B, this will run, restarting the loop</span>
+            <span style="color: #008800; font-weight: bold">else</span>{
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Invalid input, please try again</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                <span style="color: #008800; font-weight: bold">continue</span>;
+            }
+            
+        }
+        <span style="color: #888888">//If the user chose door B this code will run, giving them another option</span>
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (doorInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;C&#39;</span>){
+            
+
+            <span style="color: #888888">//Gets the input of their second option</span>
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You have chosen the door C, you see a pedestal appear with a knife on it and a bowl, you also see a door marked &#39;Escape&#39;, you can either enter the door marked &#39;Escape&#39; or sacrifice your blood, which do you chose? (A/B): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> doorCInput;
+            
+            <span style="color: #888888">//Based on that input outputs text and sets the userWin variable to either true or false</span>
+            <span style="color: #008800; font-weight: bold">if</span> (doorCInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;A&#39;</span>){
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You have chosen the obvious choice, the door marked escape, but there is not escaoe too be found, instead you see nothing, darkness is all around you, you are in prison now, for trying to escape, you are doomed too a fate worse than death, too sit in darkness for all eternity, waiting, too no avail.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                userWin <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+            }
+            <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (doorCInput <span style="color: #333333">==</span> <span style="color: #0044DD">&#39;B&#39;</span>){
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You have chosen too give your blood, as you slice your arm blood fills the bowl, the area starts to light up red, you feel lightheaded but relieved as all of a sudden you appear in at your house, in bed, awake. You look at your arm and the scar is still there, market with a strange red sigil, you are grateful to be alive.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                userWin <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+
+            }
+            <span style="color: #888888">//If the user does not input A or B, this will run, restarting the loop</span>
+            <span style="color: #008800; font-weight: bold">else</span>{
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Invalid input, please try again</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                <span style="color: #008800; font-weight: bold">continue</span>;
+            }
+            
+        }
+        <span style="color: #888888">//If the user&#39;s intial input isnt A, B, or C, this will run, restarting the loop</span>
+        <span style="color: #008800; font-weight: bold">else</span>{
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Invalid input, please try again</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            <span style="color: #008800; font-weight: bold">continue</span>;
+        }
+        
+        <span style="color: #888888">//If the user chose the path that won, this text will run and then the user will be prompted to play again or not</span>
+        <span style="color: #008800; font-weight: bold">if</span> (userWin <span style="color: #333333">==</span> <span style="color: #007020">true</span>){
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Congratulations, you chose the path that lead you too survive.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Do you wish too play again? (Y/N): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> loopAgain;
+            cout <span style="color: #333333">&lt;&lt;</span><span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            
+        }
+        <span style="color: #888888">//If the user chose a path that lost, this text will run and then the user will be prompted to play again or not</span>
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (userWin <span style="color: #333333">==</span> <span style="color: #007020">false</span>){
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Unfortunately, you have chosen the wrong path and lost the scary door game. </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Do you wish too play again? (Y/N): &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> loopAgain;
+            cout <span style="color: #333333">&lt;&lt;</span><span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            
+        }
+        
+        
+    }
+</pre></td></tr></table></div>
+
+
+                    <h2>Vending Machine</h2>
+                    <!-- HTML generated using hilite.me --><div class="scroll"  style="background: #ffffff; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important; height:1060px; width:auto;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350</pre></td><td><pre style="margin: 0; line-height: 125%">        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">Hello &quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getName(currentProfile) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;, you have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentProfile) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+    
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">You come across 5 vending machines in an inconspicuous hallway.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">1. Candy Vending Machine&quot;</span>;
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">2. Soda Vending Machine&quot;</span>;
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">3. Chips Vending Machine&quot;</span>;
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">4. Chocolate Vending Machine&quot;</span>;
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">5. Coffee Vending Machine&quot;</span>;
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">Which one do you chose to approach? &quot;</span>;
+        
+        cin <span style="color: #333333">&gt;&gt;</span> userVendingChoice;
+        
+        <span style="color: #888888">//In a loop to help with stopping invalid inputs</span>
+        <span style="color: #008800; font-weight: bold">while</span> (<span style="color: #007020">true</span>)
+        {
+        
+        <span style="color: #888888">// If the user&#39;s vending machine choice is 1, that coresponds to the candy vending machine</span>
+        <span style="color: #008800; font-weight: bold">if</span>(userVendingChoice <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;1&quot;</span>)
+        {
+            cout <span style="color: #333333">&lt;&lt;</span> candyVMGraphic;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You chose the candy bar vending machine </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">As you walk up to it you see its options.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            
+            
+            candyVM.printItems();
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Which option do you chose? &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> itemOption;
+            
+            <span style="color: #888888">//If the user has enough money and the stock of the item isn&#39;t 0, then they will buy it, and randomly they can get either 2 items for the price of 1, or 0 items for the price of 1, and this is dependant on their luck value and if they do not have enough money, it will tell the user, and then go to the next loop.</span>
+            <span style="color: #008800; font-weight: bold">if</span>(candyVM.buyItem(itemOption, user.getMoney(currentMoney)) <span style="color: #333333">&amp;&amp;</span> candyVM.getStock(candyVM.getItemIndex(itemOption)) <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+            {
+                <span style="color: #333399; font-weight: bold">double</span> doubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                <span style="color: #333399; font-weight: bold">double</span> anotherDoubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(getDoubleItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(candyVM.getItemWithLocation(itemOption), currentProfile);
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Succesfully purchased &quot;</span> <span style="color: #333333">&lt;&lt;</span> candyVM.getItemWithLocation(itemOption);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.95</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>))
+                {
+                    user.addItem(candyVM.getItemWithLocation(itemOption), currentProfile);
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                <span style="color: #008800; font-weight: bold">else</span>
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">The item did not drop. You are sad!&quot;</span>;
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.025</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>) <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">false</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(candyVM.getItemWithLocation(itemOption), currentProfile);
+                }
+                <span style="color: #008800; font-weight: bold">if</span>(anotherDoubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.5</span> <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+                candyVM.addMoney(candyVM.getPrice(candyVM.getItemIndex(itemOption)));
+                user.subtractMoney(currentProfile,  candyVM.getPrice(candyVM.getItemIndex(itemOption)));
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+                user.calibrateLuck(currentProfile, user.getMoney(currentProfile));
+            }
+            <span style="color: #008800; font-weight: bold">else</span>
+            {
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Purchase unsuccesfull</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                <span style="color: #008800; font-weight: bold">if</span>(candyVM.getStock(candyVM.getItemIndex(itemOption)) <span style="color: #333333">&lt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Item is out of stock, admins can restock items with the control panel&quot;</span>;
+                }
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+            }
+            <span style="color: #008800; font-weight: bold">break</span>;
+        }
+        <span style="color: #888888">// If the user&#39;s vending machine choice is 2, that coresponds to the soda vending machine</span>
+        <span style="color: #008800; font-weight: bold">if</span>(userVendingChoice <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;2&quot;</span>)
+        {
+            cout <span style="color: #333333">&lt;&lt;</span> sodaVMGraphic;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You chose the soda vending machine </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">As you walk up to it you see its options.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            
+
+            sodaVM.printItems();
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Which option do you chose? &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> itemOption;
+            <span style="color: #888888">//If the user has enough money and the stock of the item isn&#39;t 0, then they will buy it, and randomly they can get either 2 items for the price of 1, or 0 items for the price of 1, and this is dependant on their luck value and if they do not have enough money, it will tell the user, and then go to the next loop.</span>
+            <span style="color: #008800; font-weight: bold">if</span>(sodaVM.buyItem(itemOption, user.getMoney(currentMoney)) <span style="color: #333333">&amp;&amp;</span> sodaVM.getStock(sodaVM.getItemIndex(itemOption)) <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+            {
+                <span style="color: #333399; font-weight: bold">double</span> doubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                <span style="color: #333399; font-weight: bold">double</span> anotherDoubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(getDoubleItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(sodaVM.getItemWithLocation(itemOption), currentProfile);
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Succesfully purchased &quot;</span> <span style="color: #333333">&lt;&lt;</span> sodaVM.getItemWithLocation(itemOption);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.95</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>))
+                {
+                    user.addItem(sodaVM.getItemWithLocation(itemOption), currentProfile);
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                <span style="color: #008800; font-weight: bold">else</span>
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">The item did not drop. You are sad!&quot;</span>;
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.025</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>) <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">false</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(sodaVM.getItemWithLocation(itemOption), currentProfile);
+                }
+                <span style="color: #008800; font-weight: bold">if</span>(anotherDoubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.5</span> <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+                sodaVM.addMoney(sodaVM.getPrice(sodaVM.getItemIndex(itemOption)));
+                user.subtractMoney(currentProfile,  sodaVM.getPrice(sodaVM.getItemIndex(itemOption)));
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+                user.calibrateLuck(currentProfile, user.getMoney(currentProfile));
+            }
+            <span style="color: #008800; font-weight: bold">else</span>
+            {
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Purchase unsuccesfull</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                <span style="color: #008800; font-weight: bold">if</span>(sodaVM.getStock(sodaVM.getItemIndex(itemOption)) <span style="color: #333333">&lt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Item is out of stock, admins can restock items with the control panel&quot;</span>;
+                }
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+            }
+            <span style="color: #008800; font-weight: bold">break</span>;
+        }
+        <span style="color: #888888">// If the user&#39;s vending machine choice is 3, that coresponds to the chips vending machine</span>
+        <span style="color: #008800; font-weight: bold">if</span>(userVendingChoice <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;3&quot;</span>)
+        {
+            cout <span style="color: #333333">&lt;&lt;</span> chipsVMGraphic;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You chose the chips vending machine </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">As you walk up to it you see its options.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            
+
+            chipsVM.printItems();
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Which option do you chose? &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> itemOption;
+            <span style="color: #888888">//If the user has enough money and the stock of the item isn&#39;t 0, then they will buy it, and randomly they can get either 2 items for the price of 1, or 0 items for the price of 1, and this is dependant on their luck value and if they do not have enough money, it will tell the user, and then go to the next loop.</span>
+            <span style="color: #008800; font-weight: bold">if</span>(chipsVM.buyItem(itemOption, user.getMoney(currentMoney)) <span style="color: #333333">&amp;&amp;</span> chipsVM.getStock(chipsVM.getItemIndex(itemOption)) <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+            {
+                <span style="color: #333399; font-weight: bold">double</span> doubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                <span style="color: #333399; font-weight: bold">double</span> anotherDoubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(getDoubleItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(chipsVM.getItemWithLocation(itemOption), currentProfile);
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Succesfully purchased &quot;</span> <span style="color: #333333">&lt;&lt;</span> chipsVM.getItemWithLocation(itemOption);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.95</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>))
+                {
+                    user.addItem(chipsVM.getItemWithLocation(itemOption), currentProfile);
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                <span style="color: #008800; font-weight: bold">else</span>
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">The item did not drop. You are sad!&quot;</span>;
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.025</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>) <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">false</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(chipsVM.getItemWithLocation(itemOption), currentProfile);
+                }
+                <span style="color: #008800; font-weight: bold">if</span>(anotherDoubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.5</span> <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+                chipsVM.addMoney(chipsVM.getPrice(chipsVM.getItemIndex(itemOption)));
+                user.subtractMoney(currentProfile,  chipsVM.getPrice(chipsVM.getItemIndex(itemOption)));
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+                user.calibrateLuck(currentProfile, user.getMoney(currentProfile));
+            }
+            <span style="color: #008800; font-weight: bold">else</span>
+            {
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Purchase unsuccesfull</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                <span style="color: #008800; font-weight: bold">if</span>(chipsVM.getStock(chipsVM.getItemIndex(itemOption)) <span style="color: #333333">&lt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Item is out of stock, admins can restock items with the control panel&quot;</span>;
+                }
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+            }
+            <span style="color: #008800; font-weight: bold">break</span>;
+        }
+        <span style="color: #888888">// If the user&#39;s vending machine choice is 4, that coresponds to the chocolate vending machine</span>
+        <span style="color: #008800; font-weight: bold">if</span>(userVendingChoice <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;4&quot;</span>)
+        {
+            cout <span style="color: #333333">&lt;&lt;</span> chocolateVMGraphic;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You chose the chocolate vending machine </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">As you walk up to it you see its options.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            
+
+            chocolateVM.printItems();
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Which option do you chose? &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> itemOption;
+            <span style="color: #888888">//If the user has enough money and the stock of the item isn&#39;t 0, then they will buy it, and randomly they can get either 2 items for the price of 1, or 0 items for the price of 1, and this is dependant on their luck value and if they do not have enough money, it will tell the user, and then go to the next loop.</span>
+            <span style="color: #008800; font-weight: bold">if</span>(chocolateVM.buyItem(itemOption, user.getMoney(currentMoney)) <span style="color: #333333">&amp;&amp;</span> chocolateVM.getStock(chocolateVM.getItemIndex(itemOption)) <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+            {
+                <span style="color: #333399; font-weight: bold">double</span> doubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                <span style="color: #333399; font-weight: bold">double</span> anotherDoubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(getDoubleItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(chocolateVM.getItemWithLocation(itemOption), currentProfile);
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Succesfully purchased &quot;</span> <span style="color: #333333">&lt;&lt;</span> chocolateVM.getItemWithLocation(itemOption);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.95</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>))
+                {
+                    user.addItem(chocolateVM.getItemWithLocation(itemOption), currentProfile);
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                <span style="color: #008800; font-weight: bold">else</span>
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">The item did not drop. You are sad!&quot;</span>;
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.025</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>) <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">false</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(chocolateVM.getItemWithLocation(itemOption), currentProfile);
+                }
+                <span style="color: #008800; font-weight: bold">if</span>(anotherDoubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.5</span> <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+                chocolateVM.addMoney(chocolateVM.getPrice(chocolateVM.getItemIndex(itemOption)));
+                user.subtractMoney(currentProfile,  chocolateVM.getPrice(chocolateVM.getItemIndex(itemOption)));
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+                user.calibrateLuck(currentProfile, user.getMoney(currentProfile));
+            }
+            <span style="color: #008800; font-weight: bold">else</span>
+            {
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Purchase unsuccesfull</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                <span style="color: #008800; font-weight: bold">if</span>(chocolateVM.getStock(chocolateVM.getItemIndex(itemOption)) <span style="color: #333333">&lt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Item is out of stock, admins can restock items with the control panel&quot;</span>;
+                }
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+            }
+            <span style="color: #008800; font-weight: bold">break</span>;
+        }
+        <span style="color: #888888">// If the user&#39;s vending machine choice is 5, that coresponds to the coffe vending machine</span>
+        <span style="color: #008800; font-weight: bold">if</span>(userVendingChoice <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;5&quot;</span>)
+        {
+            cout <span style="color: #333333">&lt;&lt;</span> coffeeVMGraphic;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You chose the coffee vending machine </span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">As you walk up to it you see its options.</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">&quot;</span>;
+            
+
+            coffeeVM.printItems();
+            
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Which option do you chose? &quot;</span>;
+            cin <span style="color: #333333">&gt;&gt;</span> itemOption;
+            <span style="color: #888888">//If the user has enough money and the stock of the item isn&#39;t 0, then they will buy it, and randomly they can get either 2 items for the price of 1, or 0 items for the price of 1, and this is dependant on their luck value and if they do not have enough money, it will tell the user, and then go to the next loop.</span>
+            <span style="color: #008800; font-weight: bold">if</span>(coffeeVM.buyItem(itemOption, user.getMoney(currentMoney)) <span style="color: #333333">&amp;&amp;</span> coffeeVM.getStock(coffeeVM.getItemIndex(itemOption)) <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+            {
+                <span style="color: #333399; font-weight: bold">double</span> doubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                <span style="color: #333399; font-weight: bold">double</span> anotherDoubleRand <span style="color: #333333">=</span> (<span style="color: #333399; font-weight: bold">float</span>)(rand()) <span style="color: #333333">/</span> (<span style="color: #333399; font-weight: bold">float</span>)(RAND_MAX);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(getDoubleItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(coffeeVM.getItemWithLocation(itemOption), currentProfile);
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Succesfully purchased &quot;</span> <span style="color: #333333">&lt;&lt;</span> coffeeVM.getItemWithLocation(itemOption);
+                
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.95</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>))
+                {
+                    user.addItem(coffeeVM.getItemWithLocation(itemOption), currentProfile);
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+                }
+                <span style="color: #008800; font-weight: bold">else</span>
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">The item did not drop. You are sad!&quot;</span>;
+                    gotNoItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+
+                <span style="color: #008800; font-weight: bold">if</span>(doubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.025</span> <span style="color: #333333">+</span> (user.getLuck(currentProfile)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">1000</span>) <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">false</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;2 Items dropped instead of 1. You are happy!&quot;</span>;
+                    user.addItem(coffeeVM.getItemWithLocation(itemOption), currentProfile);
+                }
+                <span style="color: #008800; font-weight: bold">if</span>(anotherDoubleRand <span style="color: #333333">&lt;=</span> <span style="color: #6600EE; font-weight: bold">0.5</span> <span style="color: #333333">&amp;&amp;</span> gotNoItem <span style="color: #333333">==</span> <span style="color: #007020">true</span>)
+                {
+                    getDoubleItem <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+                }
+                
+                coffeeVM.addMoney(coffeeVM.getPrice(coffeeVM.getItemIndex(itemOption)));
+                user.subtractMoney(currentProfile,  coffeeVM.getPrice(coffeeVM.getItemIndex(itemOption)));
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+                user.calibrateLuck(currentProfile, user.getMoney(currentProfile));
+            }
+            <span style="color: #008800; font-weight: bold">else</span>
+            {
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Purchase unsuccesfull</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                <span style="color: #008800; font-weight: bold">if</span>(coffeeVM.getStock(coffeeVM.getItemIndex(itemOption)) <span style="color: #333333">&lt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                {
+                    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">Item is out of stock, admins can restock items with the control panel&quot;</span>;
+                }
+                cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">You have $&quot;</span> <span style="color: #333333">&lt;&lt;</span> user.getMoney(currentMoney) <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; left&quot;</span>;
+            }
+            <span style="color: #008800; font-weight: bold">break</span>;
+        }
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (userVendingChoice <span style="color: #333333">!=</span> <span style="background-color: #fff0f0">&quot;1&quot;</span> <span style="color: #333333">&amp;&amp;</span> userVendingChoice <span style="color: #333333">!=</span> <span style="background-color: #fff0f0">&quot;2&quot;</span> <span style="color: #333333">&amp;&amp;</span> userVendingChoice <span style="color: #333333">!=</span> <span style="background-color: #fff0f0">&quot;3&quot;</span> <span style="color: #333333">&amp;&amp;</span> userVendingChoice <span style="color: #333333">!=</span> <span style="background-color: #fff0f0">&quot;4&quot;</span> <span style="color: #333333">&amp;&amp;</span> userVendingChoice <span style="color: #333333">!=</span> <span style="background-color: #fff0f0">&quot;5&quot;</span>)
+        {
+            cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n\n</span><span style="background-color: #fff0f0">Please restart and enter a valid integer value: &quot;</span>;
+            userVendingChoice.clear();
+            cin <span style="color: #333333">&gt;&gt;</span> userVendingChoice;
+            
+        }
+    }
+</pre></td></tr></table></div>
+                    <h2> Connect 4 </h2>
+<!-- HTML generated using hilite.me --><div class="scroll"  style="background: #ffffff; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important; height:1435px; width:auto;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">evaluateVertical</span>(string playerOneSymbol, string playerTwoSymbol)
+      {
+          <span style="color: #333399; font-weight: bold">int</span> score <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+          <span style="color: #888888">//Go over each cell vertically and add the amount of each players piece to their designated variable</span>
+          <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;=</span> NUMROWS <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">4</span>; i<span style="color: #333333">++</span>)
+          {
+              <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;</span> NUMCOLS; j<span style="color: #333333">++</span>)
+              {
+                  <span style="color: #333399; font-weight: bold">int</span> playerOneCount <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+                  <span style="color: #333399; font-weight: bold">int</span> playerTwoCount <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+  
+  
+                  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> k <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; k <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">4</span>; k<span style="color: #333333">++</span>)
+                  {
+                      <span style="color: #008800; font-weight: bold">if</span> (boardArray[i <span style="color: #333333">+</span> k][j] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span>)
+                      {
+                          playerOneCount<span style="color: #333333">++</span>;
+                      }
+                      <span style="color: #008800; font-weight: bold">if</span> (boardArray[i <span style="color: #333333">+</span> k][j] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerTwoSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span>)
+                      {
+                          playerTwoCount<span style="color: #333333">++</span>;
+                      }
+                  }
+                  <span style="color: #888888">//Add to the score variable based on the amount of pieces squared, and if there is 4 in a row, add a very large value to the score</span>
+                  <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">&amp;&amp;</span> playerTwoCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      <span style="color: #008800; font-weight: bold">continue</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+                  {
+                      score <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1000</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerTwoCount <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+                  {
+                      score <span style="color: #333333">+=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1000</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      score <span style="color: #333333">+=</span> playerOneCount <span style="color: #333333">*</span> playerOneCount;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerTwoCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      score <span style="color: #333333">-=</span> playerTwoCount <span style="color: #333333">*</span> playerTwoCount;
+                  }
+              }
+          }
+          <span style="color: #888888">//returns the score value</span>
+          <span style="color: #008800; font-weight: bold">return</span> score;
+      }
+      <span style="color: #888888">//This function goes through and checks each column horizontally, and adds the amount of each piece to a count variable, then if there are pieces, it adds to the score variable based on that</span>
+      <span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">evaluateHorizontal</span>(string playerOneSymbol, string playerTwoSymbol)
+      {
+          <span style="color: #333399; font-weight: bold">int</span> score <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+  
+          <span style="color: #888888">//Go over each cell horziontally and add the amount of each players piece to their designated variable</span>
+          <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> NUMROWS; i<span style="color: #333333">++</span>)
+          {
+              <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;=</span> NUMCOLS <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">4</span>; j<span style="color: #333333">++</span>)
+              {
+                  <span style="color: #333399; font-weight: bold">int</span> playerOneCount <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+                  <span style="color: #333399; font-weight: bold">int</span> playerTwoCount <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+  
+  
+                  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> k <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; k <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">4</span>; k<span style="color: #333333">++</span>)
+                  {
+                      <span style="color: #008800; font-weight: bold">if</span> (boardArray[i][j <span style="color: #333333">+</span> k] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span>)
+                      {
+                          playerOneCount<span style="color: #333333">++</span>;
+                      }
+                      <span style="color: #008800; font-weight: bold">if</span> (boardArray[i][j <span style="color: #333333">+</span> k] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerTwoSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span>)
+                      {
+                          playerTwoCount<span style="color: #333333">++</span>;
+                      }
+                  }
+  
+                  <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">&amp;&amp;</span> playerTwoCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      <span style="color: #008800; font-weight: bold">continue</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+                  {
+                      score <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1000</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerTwoCount <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+                  {
+                      score <span style="color: #333333">+=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1000</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      score <span style="color: #333333">+=</span> playerOneCount <span style="color: #333333">*</span> playerOneCount;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerTwoCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      score <span style="color: #333333">-=</span> playerTwoCount <span style="color: #333333">*</span> playerTwoCount;
+                  }
+  
+              }
+          }
+          <span style="color: #888888">//returns score value</span>
+          <span style="color: #008800; font-weight: bold">return</span> score;
+      }
+      
+      <span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">evaluateDiagonal</span>(string playerOneSymbol, string playerTwoSymbol)
+      {
+          <span style="color: #333399; font-weight: bold">int</span> score <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+  
+          <span style="color: #888888">//This is for diagonals up and to the right, adding to a counter based on the amounts of pieces of a specific type there are</span>
+          <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;=</span> NUMROWS <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">4</span>; i<span style="color: #333333">++</span>)
+          {
+              <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; j <span style="color: #333333">&lt;=</span> NUMCOLS <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">4</span>; j<span style="color: #333333">++</span>)
+              {
+                  <span style="color: #333399; font-weight: bold">int</span> playerOneCount <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+                  <span style="color: #333399; font-weight: bold">int</span> playerTwoCount <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+  
+  
+                  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> k <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; k <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">4</span>; k<span style="color: #333333">++</span>)
+                  {
+                      <span style="color: #008800; font-weight: bold">if</span> (boardArray[i <span style="color: #333333">+</span> k][j <span style="color: #333333">+</span> k] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span>)
+                      {
+                          playerOneCount<span style="color: #333333">++</span>;
+                      }
+                      <span style="color: #008800; font-weight: bold">if</span> (boardArray[i <span style="color: #333333">+</span> k][j <span style="color: #333333">+</span> k] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerTwoSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span>)
+                      {
+                          playerTwoCount<span style="color: #333333">++</span>;
+                      }
+                  }
+                  <span style="color: #888888">//Add to the score variable based on the amount of pieces squared, and if there is 4 in a row, add a very large value to the score</span>
+                  <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">&amp;&amp;</span> playerTwoCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      <span style="color: #008800; font-weight: bold">continue</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+                  {
+                      score <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1000</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerTwoCount <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+                  {
+                      score <span style="color: #333333">+=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1000</span>;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      score <span style="color: #333333">+=</span> playerOneCount <span style="color: #333333">*</span> playerOneCount;
+                  }
+                  <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerTwoCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                  {
+                      score <span style="color: #333333">-=</span> playerTwoCount <span style="color: #333333">*</span> playerTwoCount;
+                  }
+  
+              }
+              <span style="color: #888888">//This is for diagonals up and to the left, adding to a counter based on the amounts of pieces of a specific type there are</span>
+              <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;=</span> NUMROWS <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">4</span>; i<span style="color: #333333">++</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">3</span>; j <span style="color: #333333">&lt;=</span> NUMCOLS; j<span style="color: #333333">++</span>)
+                  {
+                      <span style="color: #333399; font-weight: bold">int</span> playerOneCount <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+                      <span style="color: #333399; font-weight: bold">int</span> playerTwoCount <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+  
+                      <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> k <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; k <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">4</span>; k<span style="color: #333333">++</span>)
+                      {
+                          <span style="color: #008800; font-weight: bold">if</span> (boardArray[i <span style="color: #333333">+</span> k][j <span style="color: #333333">-</span> k] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span>)
+                          {
+                              playerOneCount<span style="color: #333333">++</span>;
+                          }
+                          <span style="color: #008800; font-weight: bold">if</span> (boardArray[i <span style="color: #333333">+</span> k][j <span style="color: #333333">-</span> k] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerTwoSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span>)
+                          {
+                              playerTwoCount<span style="color: #333333">++</span>;
+                          }
+                      }
+                      <span style="color: #888888">//Add to the score variable based on the amount of pieces squared, and if there is 4 in a row, add a very large value to the score</span>
+                      <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">&amp;&amp;</span> playerTwoCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                      {
+                          <span style="color: #008800; font-weight: bold">continue</span>;
+                      }
+                      <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+                      {
+                          score <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1000</span>;
+                      }
+                      <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerTwoCount <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">4</span>)
+                      {
+                          score <span style="color: #333333">+=</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1000</span>;
+                      }
+                      <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerOneCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                      {
+                          score <span style="color: #333333">+=</span> playerOneCount <span style="color: #333333">*</span> playerOneCount;
+                      }
+                      <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (playerTwoCount <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>)
+                      {
+                          score <span style="color: #333333">-=</span> playerTwoCount <span style="color: #333333">*</span> playerTwoCount;
+                      }
+                  }
+              }
+          }
+          <span style="color: #888888">//returns the score after all caluclations</span>
+          <span style="color: #008800; font-weight: bold">return</span> score;
+      }
+      <span style="color: #888888">//This function, similar to the checkWin function, combines all of the different evaluation functions into one function to return a fully evaluated position</span>
+      <span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">evaluatePosition</span>(string playerOneSymbol, string playerTwoSymbol)
+      {
+          <span style="color: #888888">//If the game is over, that means that someone has won, meaning that the score needs to be very large</span>
+          <span style="color: #008800; font-weight: bold">if</span> (checkGameOver())
+          {
+              <span style="color: #008800; font-weight: bold">if</span> (checkVertWin(playerOneSymbol, playerTwoSymbol) <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">2000</span>;
+              }
+              <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (checkVertWin(playerOneSymbol, playerTwoSymbol) <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">2</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">return</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">2000</span>;
+              }
+              <span style="color: #008800; font-weight: bold">if</span> (checkHorizontWin(playerOneSymbol, playerTwoSymbol) <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">2000</span>;
+              }
+              <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (checkHorizontWin(playerOneSymbol, playerTwoSymbol) <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">2</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">return</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">2000</span>;
+              }
+              <span style="color: #008800; font-weight: bold">if</span> (checkDiagonalWin(playerOneSymbol, playerTwoSymbol) <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">2000</span>;
+              }
+              <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (checkDiagonalWin(playerOneSymbol, playerTwoSymbol) <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">2</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">return</span> <span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">2000</span>;
+              }
+              <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+          }
+  
+          <span style="color: #888888">//These variables are used to store the evalutaion of each direction, and then return it as a score variable</span>
+          <span style="color: #333399; font-weight: bold">int</span> score <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+          <span style="color: #333399; font-weight: bold">int</span> numEmpty <span style="color: #333333">=</span> getNumEmptySpaces();
+          <span style="color: #333399; font-weight: bold">int</span> totalSpaces <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">42</span>;
+          <span style="color: #333399; font-weight: bold">double</span> emptyRatio <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">static_cast</span><span style="color: #333333">&lt;</span><span style="color: #333399; font-weight: bold">double</span><span style="color: #333333">&gt;</span>(numEmpty) <span style="color: #333333">/</span> totalSpaces;
+          <span style="color: #333399; font-weight: bold">double</span> vertWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.0</span>;
+          <span style="color: #333399; font-weight: bold">double</span> horizWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.0</span>;
+          <span style="color: #333399; font-weight: bold">double</span> diagWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.0</span>;
+  
+          <span style="color: #888888">//In the early game, horizontal wins have a higher value, as they are usually pretty easy to build in the early game</span>
+          <span style="color: #008800; font-weight: bold">if</span> (emptyRatio <span style="color: #333333">&gt;=</span> <span style="color: #6600EE; font-weight: bold">0.7</span>)
+          {
+              vertWeight <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+              horizWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.5</span>;
+              diagWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.25</span>;
+  
+          }
+          <span style="color: #888888">//In the mid game, everything is almost equal, except that vertical scores are worth more since the game needs to get higher and higher in the board</span>
+          <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (emptyRatio <span style="color: #333333">&gt;=</span> <span style="color: #6600EE; font-weight: bold">0.4</span>)
+          {
+              vertWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.25</span>;
+              horizWeight <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+              diagWeight <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>;
+          }
+          <span style="color: #888888">//At the end game everything is more a bit more, since winning is very important when there are limited spots</span>
+          <span style="color: #008800; font-weight: bold">else</span>
+          {
+              vertWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.25</span>;
+              horizWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.25</span>;
+              diagWeight <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">1.25</span>;
+          }
+  
+  
+          <span style="color: #888888">//adds these weighted score values to a score variable and returns it</span>
+          score <span style="color: #333333">+=</span> (vertWeight <span style="color: #333333">*</span> evaluateVertical(playerOneSymbol, playerTwoSymbol));
+          score <span style="color: #333333">+=</span> (horizWeight <span style="color: #333333">*</span> evaluateHorizontal(playerOneSymbol, playerTwoSymbol));
+          score <span style="color: #333333">+=</span> (diagWeight <span style="color: #333333">*</span> evaluateDiagonal(playerOneSymbol, playerTwoSymbol));
+  
+          <span style="color: #008800; font-weight: bold">return</span> score;
+  
+      }
+      <span style="color: #888888">//This method gets the amount of free spaces, by subtracting the total spaces by the amount of spaces taken by a move</span>
+      <span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">getNumEmptySpaces</span>()
+      {
+          <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">42</span> <span style="color: #333333">-</span> getMovesPlayed();
+      }
+  <span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">minimax</span>(string playerOneSymbol, string playerTwoSymbol, <span style="color: #333399; font-weight: bold">int</span> depth, <span style="color: #333399; font-weight: bold">int</span> alpha, <span style="color: #333399; font-weight: bold">int</span> beta, <span style="color: #333399; font-weight: bold">bool</span> isMaxPlayer)
+      {
+          <span style="color: #008800; font-weight: bold">if</span> (depth <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">||</span> checkGameOver())
+          {
+              <span style="color: #008800; font-weight: bold">return</span> evaluatePosition(playerOneSymbol, playerTwoSymbol);
+          }
+          <span style="color: #008800; font-weight: bold">if</span> (isMaxPlayer)
+          {
+              <span style="color: #333399; font-weight: bold">int</span> value <span style="color: #333333">=</span> INT_MIN;
+              <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> NUMCOLS; i<span style="color: #333333">++</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">!</span>colIsFull[i])
+                  {
+                      <span style="color: #008800; font-weight: bold">if</span> (depth <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+                      {
+                          placePiece(playerOneSymbol, playerOneSymbol, playerTwoSymbol, i, <span style="color: #007020">false</span>);
+                      }
+  
+                    
+                     
+                      value <span style="color: #333333">=</span> max(value, minimax(playerOneSymbol, playerTwoSymbol, depth <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>, alpha, beta, <span style="color: #007020">false</span>));
+  
+                      
+                      <span style="color: #008800; font-weight: bold">if</span> (depth <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">2</span>)
+                      {
+                          placePiece(playerOneSymbol, playerOneSymbol, playerTwoSymbol, i, <span style="color: #007020">true</span>);
+                      }
+  
+                   
+                      <span style="color: #008800; font-weight: bold">if</span> (value <span style="color: #333333">&gt;</span> beta)
+                      {
+                          <span style="color: #008800; font-weight: bold">break</span>;
+                      }
+                      alpha <span style="color: #333333">=</span> max(alpha, value);
+  
+                  }
+              }
+              
+              <span style="color: #008800; font-weight: bold">return</span> value;
+          }
+          
+          <span style="color: #008800; font-weight: bold">else</span>
+          {
+              <span style="color: #333399; font-weight: bold">int</span> value <span style="color: #333333">=</span> INT_MAX;
+             
+              <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> NUMCOLS; i<span style="color: #333333">++</span>)
+              {
+                  <span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">!</span>colIsFull[i])
+                  {
+                      <span style="color: #008800; font-weight: bold">if</span> (depth <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+                      {
+                          placePiece(playerTwoSymbol, playerOneSymbol, playerTwoSymbol, i, <span style="color: #007020">false</span>);
+                      }
+                      
+                      value <span style="color: #333333">=</span> min(value, minimax(playerOneSymbol, playerTwoSymbol, depth <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>, alpha, beta, <span style="color: #007020">true</span>));
+  
+                      
+                      <span style="color: #008800; font-weight: bold">if</span> (depth <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">2</span>)
+                      {
+                          placePiece(playerTwoSymbol, playerOneSymbol, playerTwoSymbol, i, <span style="color: #007020">true</span>);
+                      }
+  
+              
+                      <span style="color: #008800; font-weight: bold">if</span> (value <span style="color: #333333">&lt;</span> alpha)
+                      {
+                          <span style="color: #008800; font-weight: bold">break</span>;
+                      }
+                      beta <span style="color: #333333">=</span> min(beta, value);
+  
+                  }
+              }
+              
+              <span style="color: #008800; font-weight: bold">return</span> value;
+          }
+  
+      }
+  <span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">findBestMove</span>(string playerOneSymbol, string playerTwoSymbol)
+      {
+          <span style="color: #888888">//Initializing variables to store the best values and the current coordinates</span>
+          <span style="color: #333399; font-weight: bold">int</span> bestVal <span style="color: #333333">=</span> INT_MIN;
+          <span style="color: #333399; font-weight: bold">int</span> bestMove;
+          <span style="color: #333399; font-weight: bold">int</span> cX <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+          <span style="color: #333399; font-weight: bold">int</span> cY <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+  
+          <span style="color: #888888">//checks and does changes to see if there are any invalid columns before proceeding to find the best move</span>
+          <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> NUMCOLS; i<span style="color: #333333">++</span>)
+          {
+              <span style="color: #008800; font-weight: bold">if</span> (checkTopRowHasPiece(i))
+              {
+                  colIsFull[i] <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+              }
+              <span style="color: #008800; font-weight: bold">else</span>
+              {
+                  colIsFull[i] <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+              }
+          }
+          <span style="color: #888888">//For every valid column</span>
+          <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> NUMCOLS; i<span style="color: #333333">++</span>)
+          {
+              <span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">!</span>colIsFull[i])
+              {
+                  <span style="color: #888888">//place a piece, then store the current x and y cordinates of that piece, then run the minimax function on this position.</span>
+                  placePiece(playerOneSymbol, playerOneSymbol, playerTwoSymbol, i, <span style="color: #007020">false</span>);
+                  cX <span style="color: #333333">=</span> getP1CurrentX();
+                  cY <span style="color: #333333">=</span> getP1CurrentY();
+                  <span style="color: #888888">//At this point, since there is a depth of 4, the minimax algorithm will initiate and go deep down to the bottom layer, and come back and return the value of that position, while placing moves and checking future moves (4 turns in the future)</span>
+                  <span style="color: #333399; font-weight: bold">int</span> moveVal <span style="color: #333333">=</span> minimax(playerOneSymbol, playerTwoSymbol, <span style="color: #0000DD; font-weight: bold">4</span>, INT_MIN, INT_MAX, <span style="color: #007020">true</span>);
+                  <span style="color: #888888">//Then, once this evaluation of the poisiton is gotten, the coordinates of the piece that was placed originally are set to be the most recent coorindates, which are then reset</span>
+                  p1CurrentX <span style="color: #333333">=</span> cX;
+                  p1CurrentY <span style="color: #333333">=</span> cY;
+                  placePiece(playerOneSymbol, playerOneSymbol, playerTwoSymbol, i, <span style="color: #007020">true</span>);
+                  cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;I: &quot;</span> <span style="color: #333333">&lt;&lt;</span> i <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; VALUE: &quot;</span> <span style="color: #333333">&lt;&lt;</span> moveVal <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&quot;</span>;
+                  <span style="color: #888888">//Then like in the minimax function, the best move is determined by comparing the current value to the previous one, in this case we want the largest value</span>
+                  <span style="color: #008800; font-weight: bold">if</span> (moveVal <span style="color: #333333">&gt;</span> bestVal)
+                  {
+                      <span style="color: #888888">//Based on this, the best move variable is set to the current column which has the highest value and the bestValue is set to the current value</span>
+                      bestMove <span style="color: #333333">=</span> i;
+                      bestVal <span style="color: #333333">=</span> moveVal;
+                  }
+              }
+          }
+          <span style="color: #888888">//The best move is then returned</span>
+          <span style="color: #008800; font-weight: bold">return</span> bestMove;
+      }
+      <span style="color: #888888">//This function find the best move for player two, in this case, the AI. The only 2 major differences between this and the previous findBestMove is that there is a depth parameter here, and there are some simple overides to avoid a guarenteed player one win at the begining of the game</span>
+      <span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">findBestMoveTwo</span>(string playerOneSymbol, string playerTwoSymbol, <span style="color: #333399; font-weight: bold">int</span> depth)
+      {
+          <span style="color: #888888">//Initializing variables to store the best values and the current coordinates</span>
+          <span style="color: #333399; font-weight: bold">int</span> bestVal <span style="color: #333333">=</span> INT_MAX;
+          <span style="color: #333399; font-weight: bold">int</span> bestMove;
+          <span style="color: #333399; font-weight: bold">int</span> cX <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+          <span style="color: #333399; font-weight: bold">int</span> cY <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+          <span style="color: #888888">//checks and does changes to see if there are any invalid columns before proceeding to find the best move</span>
+          <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> NUMCOLS; i<span style="color: #333333">++</span>)
+          {
+              <span style="color: #008800; font-weight: bold">if</span> (checkTopRowHasPiece(i))
+              {
+                  colIsFull[i] <span style="color: #333333">=</span> <span style="color: #007020">true</span>;
+              }
+              <span style="color: #008800; font-weight: bold">else</span>
+              {
+                  colIsFull[i] <span style="color: #333333">=</span> <span style="color: #007020">false</span>;
+              }
+          }
+          <span style="color: #888888">//For every valid column</span>
+          <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; i <span style="color: #333333">&lt;</span> NUMCOLS; i<span style="color: #333333">++</span>)
+          {
+              <span style="color: #008800; font-weight: bold">if</span> (<span style="color: #333333">!</span>colIsFull[i])
+              {
+                  <span style="color: #888888">//place a piece, then store the current x and y cordinates of that piece, then run the minimax function on this position.</span>
+                  placePiece(playerTwoSymbol, playerOneSymbol, playerTwoSymbol, i, <span style="color: #007020">false</span>);
+                  cX <span style="color: #333333">=</span> getP2CurrentX();
+                  cY <span style="color: #333333">=</span> getP2CurrentY();
+                  
+                  <span style="color: #333399; font-weight: bold">int</span> moveVal <span style="color: #333333">=</span> minimax(playerOneSymbol, playerTwoSymbol, depth, INT_MIN, INT_MAX, <span style="color: #007020">false</span>);
+                  <span style="color: #888888">//Then, once this evaluation of the poisiton is gotten, the coordinates of the piece that was placed originally are set to be the most recent coorindates, which are then reset</span>
+                  p2CurrentX <span style="color: #333333">=</span> cX;
+                  p2CurrentY <span style="color: #333333">=</span> cY;
+                  placePiece(playerTwoSymbol, playerOneSymbol, playerTwoSymbol, i, <span style="color: #007020">true</span>);
+                  <span style="color: #888888">//Then like in the minimax function, the best move is determined by comparing the current value to the previous one, in this case we want the lowest value</span>
+                  <span style="color: #008800; font-weight: bold">if</span> (moveVal <span style="color: #333333">&lt;</span> bestVal)
+                  {
+                      <span style="color: #888888">//Based on this, the best move variable is set to the current column which has the highest value and the bestValue is set to the current value</span>
+                      bestMove <span style="color: #333333">=</span> i;
+                      bestVal <span style="color: #333333">=</span> moveVal;
+                  }
+              }
+          }
+  
+          <span style="color: #888888">//These are some simple overide functions, that check to avoid a situation where player one gets 2 pieces on the bottom, and the ai doesnt block them, making it impossible for player one to win</span>
+          <span style="color: #888888">//This goes through the bottom row, for every position where it is possible to have 2 pieces in the middle, and 2 free cells on either side, it will overide the decided move to block the guarenteed win</span>
+          <span style="color: #888888">//This only needs to happen for the bottom row, since after that it is good enough to recognise when the user tries something like that</span>
+          <span style="color: #008800; font-weight: bold">if</span> (boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">1</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;|   &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">3</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">4</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;|   &quot;</span>)
+          {
+              bestMove <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">4</span>;
+          }
+          <span style="color: #008800; font-weight: bold">if</span> (boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;|   &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">3</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">4</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">5</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;|   &quot;</span>)
+          {
+              bestMove <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">5</span>;
+          }
+          <span style="color: #008800; font-weight: bold">if</span> (boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">3</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;|   &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">4</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">5</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;| &quot;</span> <span style="color: #333333">+</span> playerOneSymbol <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span> <span style="color: #333333">&amp;&amp;</span> boardArray[<span style="color: #0000DD; font-weight: bold">5</span>][<span style="color: #0000DD; font-weight: bold">6</span>] <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;|   &quot;</span>)
+          {
+              bestMove <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">6</span>;
+          }
+          <span style="color: #888888">//The best move is then returned</span>
+          <span style="color: #008800; font-weight: bold">return</span> bestMove;
+      }
+  };
+</pre></td></tr></table></div>
+
+					<h2 style="text-shadow:1px 1px 10px rgba(255,255,255, 0.05), 1px 1px 10px rgba(204,204,204,0.05);">Portfolio Website</h2>
+					<h3>The Navigation Bar</h3>
+					
+					<!-- HTML generated using hilite.me --><div class="scroll"  style="background: #ffffff; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important;  width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">nav</span> <span style="color: #007700">ul</span> <span style="color: #007700">li</span> <span style="color: #007700">a</span>{ 
+	<span style="color: #008800; font-weight: bold">font-size</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">30px</span>;
+	<span style="color: #008800; font-weight: bold">position</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">relative</span>;
+	<span style="color: #008800; font-weight: bold">display</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">inline</span><span style="color: #333333">-</span><span style="color: #008800; font-weight: bold">block</span>;
+	<span style="color: #008800; font-weight: bold">height</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">50px</span>;
+	<span style="color: #008800; font-weight: bold">line-height</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">50</span>x;
+	<span style="color: #008800; font-weight: bold">padding</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">0px</span> <span style="color: #6600EE; font-weight: bold">15px</span>;
+	<span style="color: #008800; font-weight: bold">text-decoration</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">none</span>;
+	<span style="color: #008800; font-weight: bold">color</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">#f7b42c</span> ;
+	<span style="color: #008800; font-weight: bold">overflow</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">hidden</span>;
+        <span style="color: #008800; font-weight: bold">background</span><span style="color: #333333">:</span> linear<span style="color: #333333">-</span>gradient(to <span style="color: #008800; font-weight: bold">right</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#a812ed</span> <span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#a812ed</span> <span style="color: #6600EE; font-weight: bold">50</span><span style="color: #333333">%,</span> <span style="color: #6600EE; font-weight: bold">#f7b42c</span>   <span style="color: #6600EE; font-weight: bold">50</span><span style="color: #333333">%</span>);
+        filter<span style="color: #333333">:</span> brightness(<span style="color: #6600EE; font-weight: bold">150</span><span style="color: #333333">%</span>);
+	<span style="color: #008800; font-weight: bold">background</span><span style="color: #333333">-</span><span style="color: #008800; font-weight: bold">clip</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">text</span>;
+	<span style="color: #333333">-</span>webkit<span style="color: #333333">-</span><span style="color: #008800; font-weight: bold">background</span><span style="color: #333333">-</span><span style="color: #008800; font-weight: bold">clip</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">text</span>;
+	<span style="color: #333333">-</span>webkit<span style="color: #333333">-</span><span style="color: #008800; font-weight: bold">text</span><span style="color: #333333">-</span>fill<span style="color: #333333">-</span><span style="color: #008800; font-weight: bold">color</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">transparent</span>;
+	<span style="color: #008800; font-weight: bold">background</span><span style="color: #333333">-</span><span style="color: #008800; font-weight: bold">size</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">200</span><span style="color: #333333">%</span> <span style="color: #6600EE; font-weight: bold">100</span><span style="color: #333333">%</span>;
+	<span style="color: #008800; font-weight: bold">background-position</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">100</span><span style="color: #333333">%</span>;
+	transition<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">background-position</span> <span style="color: #6600EE; font-weight: bold">475</span>ms ease;
+	<span style="color: #008800; font-weight: bold">text-shadow</span><span style="color: #333333">:</span><span style="color: #6600EE; font-weight: bold">1px</span> <span style="color: #6600EE; font-weight: bold">1px</span> <span style="color: #6600EE; font-weight: bold">10px</span> rgba(<span style="color: #6600EE; font-weight: bold">255</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">255</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">255</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">0</span><span style="color: #333333">.</span><span style="color: #6600EE; font-weight: bold">4</span>)<span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">1px</span> <span style="color: #6600EE; font-weight: bold">1px</span> <span style="color: #6600EE; font-weight: bold">10px</span> rgba(<span style="color: #6600EE; font-weight: bold">204</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">204</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">204</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">0</span><span style="color: #333333">.</span><span style="color: #6600EE; font-weight: bold">4</span>);
+	
+}
+<span style="color: #007700">nav</span> <span style="color: #007700">ul</span> <span style="color: #007700">li</span> <span style="color: #007700">a</span><span style="color: #555555; font-weight: bold">:hover</span>{
+	<span style="color: #008800; font-weight: bold">background-position</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">0</span> <span style="color: #6600EE; font-weight: bold">100</span><span style="color: #333333">%</span>;
+
+}
+</pre></div>
+
+					<h3>Gradient Dividers</h3>
+						
+					<!-- HTML generated using hilite.me --><div class="scroll"  style="background: #ffffff; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important;  height:auto; width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0066BB; font-weight: bold">#leftcontent</span> <span style="color: #007700">img</span>{
+	<span style="color: #008800; font-weight: bold">border-width</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">5px</span>;
+	<span style="color: #008800; font-weight: bold">border-style</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">solid</span>;
+	<span style="color: #008800; font-weight: bold">border</span><span style="color: #333333">-</span>image<span style="color: #333333">:</span> linear<span style="color: #333333">-</span>gradient(to <span style="color: #008800; font-weight: bold">top</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#BF953F</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#FCF6BA</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#B38728</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#FBF5B7</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#AA771C</span>) <span style="color: #6600EE; font-weight: bold">1</span>; <span style="color: #6600EE; font-weight: bold">1</span> <span style="color: #6600EE; font-weight: bold">100</span><span style="color: #333333">%</span>;
+}
+</pre></div>
+					
+					<h3>Side Glow</h3>
+
+					<!-- HTML generated using hilite.me --><div class="scroll"  style="background: #ffffff; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important;  width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BB0066; font-weight: bold">.GradientBorder</span> {
+  <span style="color: #008800; font-weight: bold">position</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">relative</span>;
+}
+
+<span style="color: #BB0066; font-weight: bold">.GradientBorder</span><span style="color: #333333">:</span><span style="color: #555555; font-weight: bold">:before</span> {
+  <span style="color: #008800; font-weight: bold">content</span><span style="color: #333333">:</span> <span style="background-color: #fff0f0">&#39;&#39;</span>;
+  <span style="color: #008800; font-weight: bold">position</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">absolute</span>;
+  <span style="color: #008800; font-weight: bold">top</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">0</span>;
+  <span style="color: #008800; font-weight: bold">left</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">0</span>;
+  <span style="color: #008800; font-weight: bold">right</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">0</span>;
+  <span style="color: #008800; font-weight: bold">bottom</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">0</span>;
+  <span style="color: #008800; font-weight: bold">background</span><span style="color: #333333">:</span> linear<span style="color: #333333">-</span>gradient(<span style="color: #6600EE; font-weight: bold">45</span>deg<span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#5f0a87</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#8B2E99</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#AD2EA4</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">#a4508b</span>);
+  <span style="color: #008800; font-weight: bold">z-index</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">-2</span>;
+  filter<span style="color: #333333">:</span> blur(<span style="color: #6600EE; font-weight: bold">50px</span>);
+}
+</pre></div>
+					
+					 <h3>Button Glow</h3> 
+					
+					<!-- HTML generated using hilite.me--> <div class="GoldBorder" style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">footer</span> <span style="color: #007700">a</span>{
+	<span style="color: #008800; font-weight: bold">color</span><span style="color: #333333">:</span> <span style="color: #007020">white</span>;	
+	<span style="color: #008800; font-weight: bold">font-size</span><span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">26px</span>;
+	<span style="color: #008800; font-weight: bold">text-decoration</span><span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">none</span>;
+	transition<span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">500</span>ms ease<span style="color: #333333">-</span>out;
+
+}
+<span style="color: #007700">footer</span> <span style="color: #007700">a</span><span style="color: #555555; font-weight: bold">:hover</span>{
+	transition<span style="color: #333333">:</span> <span style="color: #6600EE; font-weight: bold">700</span>ms ease;
+	<span style="color: #008800; font-weight: bold">text-shadow</span><span style="color: #333333">:</span><span style="color: #6600EE; font-weight: bold">1px</span> <span style="color: #6600EE; font-weight: bold">1px</span> <span style="color: #6600EE; font-weight: bold">10px</span> rgba(<span style="color: #6600EE; font-weight: bold">255</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">255</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">255</span><span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">0</span><span style="color: #333333">.</span><span style="color: #6600EE; font-weight: bold">9</span>)<span style="color: #333333">,</span> <span style="color: #6600EE; font-weight: bold">1px</span> <span style="color: #6600EE; font-weight: bold">1px</span> <span style="color: #6600EE; font-weight: bold">10px</span> rgba(<span style="color: #6600EE; font-weight: bold">204</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">204</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">204</span><span style="color: #333333">,</span><span style="color: #6600EE; font-weight: bold">0</span><span style="color: #333333">.</span><span style="color: #6600EE; font-weight: bold">9</span>);
+}
+</pre></div> 
+                    
+				</div>
+				<div id="rightcontent" class="GradientBorder2">
+				
+                    <h2>Prior Experience</h2>
+					<p>
+					I have personally been coding for over 5 years in my free time, and I go into further detail about this in my <strong> <a id="linkhover" href="interest.html">engineering</a> </strong> page.
+					Because of this experience, when entering this class at the beginning of the semester, I was hoping, but not expecting to be very challenged.
+					I did realize that I was at least going to get something out of this class when I found out it was going to be in C++, so I was glad about that.
+
+					</p>		
+					<h2>Variables Assignment</h2>
+					<p>
+					This portfolio page is a showcase for my favourite and notable projects from my entire programming 11 class. 
+					Starting with one of our earliest projects, that introduced me to a new concept, setprecision, and was one of the projects that really solidified the syntax for c++ in my mind.
+					This first couple of assignments where very short and easy, just a simple introduction to programming concepts I had learned before, 
+					but I started to see some interesting things when I was given the variables assignment, with setprecision, a concept that was knew to me.
+                    It is used on lines 25-28 and 54-57 of this program, to give the user their output with two decimal places, to represent money.
+					</p>
+					<h2>Scary Door</h2>
+					<p>
+                    Another notable asssignment was the Scary Door assignment, which took place just before one of the major projects of the year. 
+                    This project was memorable for me because it not only helped me become more comfortable with C++ syntax but also provided a nice review of the concept of nesting.
+                    What made the Scary Door project stand out was the fact that we had to come up with a story. 
+                    This aspect added an exciting creative element to the assignment, allowing us to encorporate storytelling with code. 
+                    Being able to incorporate a story into a programming project was a nice change from the technical exercises we had done before. 
+                    It challenged me to think beyond the code and consider how to engage the user through an interactive story.
+                    The Scary Door project's focus on nesting was important for preparing me for the major assignment that came next, which was the Vending Machine project. 
+					</p>
+					<h2>Vending Machine</h2>
+					<p>
+					The vending machine project was the first major project that we received in this class. 
+					By major I mean that we were given around a month to complete it, and we had to do daily progress checks.
+					This was the first type of project like this not only in this class, but that I have ever done.
+                    During the development of this project, I was very glad that it was given in a way that there could be many things added onto the program, and it was up to the student to do that. 
+                    I would have been bored if this would have not been the case, but since it was, I really worked hard on it, stretching my C++ abilities to the limit, to incorporate ideas that I was also coming up with as I was writing the code.
+                    On the left is the main core conept of the vending machine program, being able to purchase items from a given vending machine. 
+                    I used a class for the player, and a class for a vending machine, to allow for the user to both have multiple profiles, and use multiple vending machines. 
+                    This then leads to a loop, giving the user many options, including changing to a different vending machine, buying another item, creating and switching to another profile, and openning the admin pannel on the vending machine.
+                    All of these features and implementations really taught me how to use and encorporate classes and class methods into a fluid and functional program, and really imrpoved my overall C++ skillset, and confidence with the language.
+                    This project was really in preperation for the true final test of this course, the final C++ project, where I decided to make connect 4.
+					</p>
+                    <h2> Connect 4 </h2>
+					<p>
+                    The C++ final project was very open ended, and I had a lot of freedom to chose what to do.
+                    One thing that I had no previous experience with was working with artificial intelligence, and I always wanted to delve into that subject, but this project presented the perfect opportunity to do so.
+                    So I knew that I wanted to make an AI, and I had to decide on what it would do, and I laneded on the game of connect 4, which would be relatively easy to make an implementation for, to allow me enough time to learn and create an AI for it.
+                    For the first week of the month that we had to do this project, I didn't really do much learning, it was mostly just recalling my previous programming knowledge, to make a working connect 4 game using 2D arrays.
+                    But when the second week started, I delved into independed research about algorithms and so many things that I had no experience with.
+                    After many hours of trial, error, and learning by the 4th week I had a working AI, which was comprised of 2 main elements.
+                    The first one is the functions used to statically evalue the value of a given position, this function is vital when determining the best move, as the AI needs to know what moves are good and what moves to are bad.
+                    The second and most important part of the AI is the minimax algorithm, the algoirthm used to go through each possible move, and determine the one that has the greates value for the given player.
+                    This algorithm goes to a certain depth, meaning moves into the future, and then returns to give a point value to each of the 7 possible moves in the average connect 4 board. 
+                    This minimax algoritim is then finally used in the findBestMove functions, to actually return the best possible move in a given position, for a given player. 
+                    All of these elements combined, make it so the computer has strategic response, and "thinks" about what the best move is, making it an AI.
+                    This project was by far the biggest learning experience for me in this entire course, and I really enjoyed the challenge that it brought.
+                    After this project, we received an HTML/CSS project, which is this website that you are looking at right now.
+					</p>		
+                    <h2>Portfolio Website </h2>
+					<p>
+                    This project was given to us along with 2 other languages to grasp the basics of. 
+                    I think that it is a nice unique way to end the year, by bringing something completely new out.
+                    In making this portfolio I gained a basic knowledge of HTML and CSS and I learned about the behind the scenes of websites which I didn't know about.
+                    On the left are some code snippets of notable sections of this website such as the navigation bar that has animations on the links, the gold gradient borders that divide each section and surround each image, the gradient side glow on each content column, and the glow of the arrow button in the footer. 
+                    I feel like these sections and details add a lot to the design of this website, and make it easier too look at and fun to play around with. 
+					</p>
+                    <h2>Overall Thoughts </h2>
+					<p>
+					I really enjoyed this course overall, I came into this course with low expectations on what I would learn due to my previous experience, but I was pleasantly surprised with how much I was able to expand and strengthen my skills in programming.
+					Some projects were more interesting than others, but each one was enjoyable to code, and original in concept.
+					The skills I learned and honed in this course will help me with my future endeavours into the world of computer science. 
+					</p>
+			
+				</div>
+			</main>
+			<footer>
+				<h3> This website was designed by Kent McDermid &copy; 2023 <a href="#top">↑</a>  </h3>
+				<h4> </h4>
+			</footer>
+		</div>
+	</body>
+</html>

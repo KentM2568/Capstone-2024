@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Capstone 2024</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1> Capstone</h1>
+			</header>
+			<nav class="module">
+				<ul> 
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="algorithm.html">Algorithme d'Investissements</a><li>
+					<li><a href="python.html">Python</a><li>
+					<li><a href="java.html">Java</a><li>	
+					<li><a href="cplusplus.html">C++</a><li>		
+					<li><a href="path.html">Chemin</a><li>
+				</ul>
+			</nav>
+			<main>
+
+				</div>
+				<div id="rightcontent" class="GradientBorder2">
+					<h2>Welcome To My Investment and Programming Showcase</h2>
+					<p>
+						Python est un langage de programmation non orientée objet qui est très polyvalent et facile à lire/écrire. Elle est principalement appliquée dans les systèmes de manipulation des données et intelligence artificielle à cause de sa vaste gamme de bibliothèques externes. Python a le plus de bibliothèques de C++ et Java, ce qui mène à plusieurs cas d'utilisation. De plus, c'est la langue la plus pour les débutants avec une courbe d'apprentissage très basse. En outre python est un langue interpreter et non compiler traditionnellement comme C++ et Java, ce qui permet le syntax d'être plus facile, cependant ça ralentit le vitesse du programme beaucoup comparer aux autres. Pour les pluparts de gens qui aspirait d'être programmeur c’est fort probable que le premier langage de programmation ils apprendrais est Python, cependant ca peut te mener très loin dans le chemin dans ton carriere tell que les applications dans les technologies émergents et innovative comme l’apprentissage automatique. Si tu veux être même un des autres types de programmeurs Python c’est un bon idee d’apprendre à cause de ces grandes bibliothèques et possibilités d’usages. 
+					</p>
+					
+					<h2>Why Did I Create This Showcase?</h2>
+					<p>
+						This website serves as the culmination of my capstone project, offering a glimpse into my skills in programming and investment. It not only represents the final project for my course but also acts as a canvas where I've applied my knowledge of HTML and CSS. Through this process, I've reflected on the projects undertaken during the semester, delving into the lessons learned and my aspirations for the future in these domains.
+					</p>
+					
+					<h2>Areas Of Exploration</h2>
+					<p>
+						The navigation on the left guides you through different facets of my journey. The <strong><a id="linkhover" href="about.html">About</a></strong> page introduces you to me, highlighting my achievements and future ambitions. The <strong><a id="linkhover" href="portfolio.html">Portfolio</a></strong> page showcases code from this semester, including notable areas like my venture into artificial intelligence. My <strong><a id="linkhover" href="interest.html">Engineering</a></strong> page narrates my passion for engineering, its history in my life, and connects to the about page, unveiling my future plans in engineering.
+					</p>
+				</div>
+				<div id="board">
+					body {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 100vh;
+						margin: 0;
+					}
+			
+					#board {
+						display: grid;
+						grid-template-columns: repeat(3, 100px);
+						grid-gap: 5px;
+						background-color: #eee;
+						padding: 10px;
+						border-radius: 5px;
+					}
+			
+					.cell {
+						width: 100px;
+						height: 100px;
+						background-color: #fff;
+						border: 1px solid #ccc;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 24px;
+						cursor: pointer;
+					}
+				</style>
+				</div>
+			</main>
+
+
+			<footer>
+				<h3> Ce site a été conçu par Kent McDermid &copy; 2024 <a href="#top">↑</a>  </h3>
+			</footer>
+		</div>
+		<script>
+			// JavaScript code for the Tic Tac Toe game
+			const board = document.getElementById("board");
+			let currentPlayer = "X";
+			let gameBoard = ["", "", "", "", "", "", "", "", ""];
+		
+			function renderBoard() {
+				board.innerHTML = "";
+				for (let i = 0; i < 9; i++) {
+					const cell = document.createElement("div");
+					cell.classList.add("cell");
+					cell.dataset.index = i;
+					cell.addEventListener("click", handleCellClick);
+					cell.textContent = gameBoard[i];
+					board.appendChild(cell);
+				}
+			}
+		
+			function handleCellClick(event) {
+				const index = event.target.dataset.index;
+				if (gameBoard[index] === "") {
+					gameBoard[index] = currentPlayer;
+					renderBoard();
+					if (checkWinner()) {
+						alert(`Player ${currentPlayer} wins!`);
+						resetGame();
+					} else if (gameBoard.every(cell => cell !== "")) {
+						alert("It's a tie!");
+						resetGame();
+					} else {
+						currentPlayer = currentPlayer === "X" ? "O" : "X";
+					}
+				}
+			}
+		
+			function checkWinner() {
+				const winningCombinations = [
+					[0, 1, 2], [3, 4, 5], [6, 7, 8],
+					[0, 3, 6], [1, 4, 7], [2, 5, 8],
+					[0, 4, 8], [2, 4, 6]
+				];
+		
+				return winningCombinations.some(combination =>
+					gameBoard[combination[0]] !== "" &&
+					gameBoard[combination[0]] === gameBoard[combination[1]] &&
+					gameBoard[combination[1]] === gameBoard[combination[2]]
+				);
+			}
+		
+			function resetGame() {
+				gameBoard = ["", "", "", "", "", "", "", "", ""];
+				currentPlayer = "X";
+				renderBoard();
+			}
+		
+			renderBoard();
+		</script>
+	</body>
+	
+</html>
