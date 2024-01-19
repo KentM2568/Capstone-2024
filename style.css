@@ -190,6 +190,7 @@ main{
 	
 
 }
+*/
 .GradientBorder {
   position: relative;
   
@@ -220,7 +221,7 @@ main{
   z-index: -2;
   filter: blur(50px);
 }
-*/
+
 
 #rightcontent {
 	/*background-image: linear-gradient(#f7b42c 0%, #fc575e 74%);*/
@@ -228,6 +229,7 @@ main{
 	padding: 25px 25px;
 	width: 1150px;
 	margin: auto;
+	color: white;
 }
 #rightcontent img {
 	border-width: 5px;
@@ -249,9 +251,15 @@ main{
 	font-size: 23px;
 	line-height: 1.6em;
 }
+#rightcontent h1{
+	font-size: 60px;
+	text-shadow: 1px 1px 0px rgba(0,0,0,1);
+	padding-bottom: 0.3em;
+	Xtext-shadow: 1px 1px 10px rgba(0,0,0, 0.2), 1px 1px 10px rgba(0,0,0, 0.2);
+}
 #rightcontent h2{
 	font-size: 40px;
-	text-shadow: 1px 1px 0px rgba(0,0,0,0.25);
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
 	padding-bottom: 0.3em;
 	Xtext-shadow: 1px 1px 10px rgba(0,0,0, 0.2), 1px 1px 10px rgba(0,0,0, 0.2);
 }
