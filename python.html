@@ -12,10 +12,10 @@
 			<nav class="module">
 				<ul> 
 					<li><a href="index.html">Accueil</a></li>
-					<li><a href="algorithm.html">Algorithme d'Investissements</a><li>
 					<li><a href="python.html">Python</a><li>
 					<li><a href="java.html">Java</a><li>	
 					<li><a href="cplusplus.html">C++</a><li>		
+					<li><a href="algorithm.html">Algorithme d'Investissements</a><li>
 					<li><a href="path.html">Chemin</a><li>
 				</ul>
 			</nav>
@@ -23,51 +23,298 @@
 
 				</div>
 				<div id="rightcontent" class="GradientBorder2">
-					<h2>Welcome To My Investment and Programming Showcase</h2>
+					<h1>Recherches et Apprentissages: Python</h1>
+					<h2>Que-ce-que c'est?</h2>
 					<p>
-						Python est un langage de programmation non orientée objet qui est très polyvalent et facile à lire/écrire. Elle est principalement appliquée dans les systèmes de manipulation des données et intelligence artificielle à cause de sa vaste gamme de bibliothèques externes. Python a le plus de bibliothèques de C++ et Java, ce qui mène à plusieurs cas d'utilisation. De plus, c'est la langue la plus pour les débutants avec une courbe d'apprentissage très basse. En outre python est un langue interpreter et non compiler traditionnellement comme C++ et Java, ce qui permet le syntax d'être plus facile, cependant ça ralentit le vitesse du programme beaucoup comparer aux autres. Pour les pluparts de gens qui aspirait d'être programmeur c’est fort probable que le premier langage de programmation ils apprendrais est Python, cependant ca peut te mener très loin dans le chemin dans ton carriere tell que les applications dans les technologies émergents et innovative comme l’apprentissage automatique. Si tu veux être même un des autres types de programmeurs Python c’est un bon idee d’apprendre à cause de ces grandes bibliothèques et possibilités d’usages. 
+						Python est un langage de programmation non orientée objet qui est très polyvalent et facile à lire/écrire. Elle est principalement appliquée dans les systèmes de manipulation des données et intelligence artificielle à cause de sa vaste gamme de bibliothèques externes. Python peut te mener très loin dans le chemin de ta carrière, notamment dans les applications des technologies émergentes et innovantes comme l'apprentissage automatique. Si tu veux être même un des autres types de programmeurs, Python est une bonne idée d'apprendre à cause de ses grandes bibliothèques et possibilités d'usages.
 					</p>
 					
-					<h2>Why Did I Create This Showcase?</h2>
+					<h2>Avantages</h2>
 					<p>
-						This website serves as the culmination of my capstone project, offering a glimpse into my skills in programming and investment. It not only represents the final project for my course but also acts as a canvas where I've applied my knowledge of HTML and CSS. Through this process, I've reflected on the projects undertaken during the semester, delving into the lessons learned and my aspirations for the future in these domains.
+						Python a le plus de bibliothèques de C++ et Java, ce qui mène à plusieurs cas d'utilisation. De plus, c'est la langue la plus pour les débutants avec une courbe d'apprentissage très basse. En outre, Python est un langage interprété et non compilé traditionnellement comme C++ et Java, ce qui permet au syntaxe d'être plus facile. Pour la plupart des gens qui aspirent à être programmeurs, il est fort probable que le premier langage de programmation qu'ils apprendront est Python. 
 					</p>
 					
-					<h2>Areas Of Exploration</h2>
+					<h2>Desavantages</h2>
 					<p>
-						The navigation on the left guides you through different facets of my journey. The <strong><a id="linkhover" href="about.html">About</a></strong> page introduces you to me, highlighting my achievements and future ambitions. The <strong><a id="linkhover" href="portfolio.html">Portfolio</a></strong> page showcases code from this semester, including notable areas like my venture into artificial intelligence. My <strong><a id="linkhover" href="interest.html">Engineering</a></strong> page narrates my passion for engineering, its history in my life, and connects to the about page, unveiling my future plans in engineering.
+						Cependant, cela ralentit la vitesse du programme beaucoup par rapport aux autres. De plus, Python n'est pas un bon option pour le développement des applications mobiles, et il utilise beaucoup plus de mémoire qu'un langue comme C++.
 					</p>
-				</div>
-				<div id="board">
-					body {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						height: 100vh;
-						margin: 0;
-					}
-			
-					#board {
-						display: grid;
-						grid-template-columns: repeat(3, 100px);
-						grid-gap: 5px;
-						background-color: #eee;
-						padding: 10px;
-						border-radius: 5px;
-					}
-			
-					.cell {
-						width: 100px;
-						height: 100px;
-						background-color: #fff;
-						border: 1px solid #ccc;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						font-size: 24px;
-						cursor: pointer;
-					}
-				</style>
+
+					<h2>Démonstration</h2>
+					<p>
+						Voici du code Python pour un programme de Connect 4.
+
+						<!-- HTML generated using hilite.me --><div class="scroll"  style="background: #111111; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important; height:775px; width:auto;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">import</span> <span style="color: #ffffff">random</span>
+
+<span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;Bienvenue à Connect Four, vous jouerez contre un ordinateur aléatoire.&quot;</span><span style="color: #ffffff">)</span>
+<span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;----------------------------------------------------------------------&quot;</span><span style="color: #ffffff">)</span>
+
+<span style="color: #ffffff">possibleLetters</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;A&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;B&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;C&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;D&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;E&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;F&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;G&quot;</span><span style="color: #ffffff">]</span>
+<span style="color: #ffffff">gameBoard</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">]]</span>
+
+<span style="color: #ffffff">rows</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">6</span>
+<span style="color: #ffffff">cols</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">7</span>
+
+<span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">printGameBoard</span><span style="color: #ffffff">():</span>
+  <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;\n     A    B    C    D    E    F    G  &quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">end=</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">)</span>
+  <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">x</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(rows):</span>
+    <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;\n   +----+----+----+----+----+----+----+&quot;</span><span style="color: #ffffff">)</span>
+    <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(x,</span> <span style="color: #0086d2">&quot; |&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">end=</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">)</span>
+    <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">y</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(cols):</span>
+      <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(gameBoard[x][y]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;🔵&quot;</span><span style="color: #ffffff">):</span>
+        <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,gameBoard[x][y],</span> <span style="color: #ffffff">end=</span><span style="color: #0086d2">&quot; |&quot;</span><span style="color: #ffffff">)</span>
+      <span style="color: #fb660a; font-weight: bold">elif</span><span style="color: #ffffff">(gameBoard[x][y]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;🔴&quot;</span><span style="color: #ffffff">):</span>
+        <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">gameBoard[x][y],</span> <span style="color: #ffffff">end=</span><span style="color: #0086d2">&quot; |&quot;</span><span style="color: #ffffff">)</span>
+      <span style="color: #fb660a; font-weight: bold">else</span><span style="color: #ffffff">:</span>
+        <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot; &quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">gameBoard[x][y],</span> <span style="color: #ffffff">end=</span><span style="color: #0086d2">&quot;  |&quot;</span><span style="color: #ffffff">)</span>
+  <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;\n   +----+----+----+----+----+----+----+&quot;</span><span style="color: #ffffff">)</span>
+
+<span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">modifyArray</span><span style="color: #ffffff">(spacePicked,</span> <span style="color: #ffffff">turn):</span>
+  <span style="color: #ffffff">gameBoard[spacePicked[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]][spacePicked[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]]</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">turn</span>
+
+<span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">checkForWinner</span><span style="color: #ffffff">(chip):</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">### Check horizontal spaces</span>
+  <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">y</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(rows):</span>
+    <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">x</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(cols</span> <span style="color: #ffffff">-</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">):</span>
+      <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">gameBoard[x][y]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">][y]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">2</span><span style="color: #ffffff">][y]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">][y]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip:</span>
+        <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;\nJeu terminé&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">chip,</span> <span style="color: #0086d2">&quot;gagne ! Merci d&#39;avoir joué :)&quot;</span><span style="color: #ffffff">)</span>
+        <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">True</span>
+
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">### Check vertical spaces</span>
+  <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">x</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(rows):</span>
+    <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">y</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(cols</span> <span style="color: #ffffff">-</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">):</span>
+      <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">gameBoard[x][y]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x][y+</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x][y+</span><span style="color: #0086f7; font-weight: bold">2</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x][y+</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip:</span>
+        <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;\nJeu terminé&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">chip,</span> <span style="color: #0086d2">&quot;gagne ! Merci d&#39;avoir joué :)&quot;</span><span style="color: #ffffff">)</span>
+        <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">True</span>
+
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">### Check upper right to bottom left diagonal spaces</span>
+  <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">x</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(rows</span> <span style="color: #ffffff">-</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">):</span>
+    <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">y</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">cols):</span>
+      <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">gameBoard[x][y]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">][y-</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">2</span><span style="color: #ffffff">][y-</span><span style="color: #0086f7; font-weight: bold">2</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">][y-</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip:</span>
+        <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;\nJeu terminé&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">chip,</span> <span style="color: #0086d2">&quot;gagne ! Merci d&#39;avoir joué :)&quot;</span><span style="color: #ffffff">)</span>
+        <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">True</span>
+
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">### Check upper left to bottom right diagonal spaces</span>
+  <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">x</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(rows</span> <span style="color: #ffffff">-</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">):</span>
+    <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">y</span> <span style="color: #ffffff">in</span> <span style="color: #ffffff">range(cols</span> <span style="color: #ffffff">-</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">):</span>
+      <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">gameBoard[x][y]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">][y+</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">2</span><span style="color: #ffffff">][y+</span><span style="color: #0086f7; font-weight: bold">2</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gameBoard[x+</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">][y+</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">chip:</span>
+        <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;\nJeu terminé&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">chip,</span> <span style="color: #0086d2">&quot;gagne ! Merci d&#39;avoir joué :)&quot;</span><span style="color: #ffffff">)</span>
+        <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">True</span>
+  <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">False</span>
+
+<span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">coordinateParser</span><span style="color: #ffffff">(inputString):</span>
+  <span style="color: #ffffff">coordinate</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[None]</span> <span style="color: #ffffff">*</span> <span style="color: #0086f7; font-weight: bold">2</span>
+  <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(inputString[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;A&quot;</span><span style="color: #ffffff">):</span>
+    <span style="color: #ffffff">coordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0</span>
+  <span style="color: #fb660a; font-weight: bold">elif</span><span style="color: #ffffff">(inputString[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;B&quot;</span><span style="color: #ffffff">):</span>
+    <span style="color: #ffffff">coordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">1</span>
+  <span style="color: #fb660a; font-weight: bold">elif</span><span style="color: #ffffff">(inputString[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;C&quot;</span><span style="color: #ffffff">):</span>
+    <span style="color: #ffffff">coordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">2</span>
+  <span style="color: #fb660a; font-weight: bold">elif</span><span style="color: #ffffff">(inputString[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;D&quot;</span><span style="color: #ffffff">):</span>
+    <span style="color: #ffffff">coordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">3</span>
+  <span style="color: #fb660a; font-weight: bold">elif</span><span style="color: #ffffff">(inputString[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;E&quot;</span><span style="color: #ffffff">):</span>
+    <span style="color: #ffffff">coordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">4</span>
+  <span style="color: #fb660a; font-weight: bold">elif</span><span style="color: #ffffff">(inputString[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;F&quot;</span><span style="color: #ffffff">):</span>
+    <span style="color: #ffffff">coordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">5</span>
+  <span style="color: #fb660a; font-weight: bold">elif</span><span style="color: #ffffff">(inputString[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&quot;G&quot;</span><span style="color: #ffffff">):</span>
+    <span style="color: #ffffff">coordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">6</span>
+  <span style="color: #fb660a; font-weight: bold">else</span><span style="color: #ffffff">:</span>
+    <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;Pas valide&quot;</span><span style="color: #ffffff">)</span>
+  <span style="color: #ffffff">coordinate[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">int(inputString[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">])</span>
+  <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">coordinate</span>
+
+<span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">isSpaceAvailable</span><span style="color: #ffffff">(intendedCoordinate):</span>
+  <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(gameBoard[intendedCoordinate[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]][intendedCoordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&#39;🔴&#39;</span><span style="color: #ffffff">):</span>
+    <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">False</span>
+  <span style="color: #fb660a; font-weight: bold">elif</span><span style="color: #ffffff">(gameBoard[intendedCoordinate[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]][intendedCoordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]]</span> <span style="color: #ffffff">==</span> <span style="color: #0086d2">&#39;🔵&#39;</span><span style="color: #ffffff">):</span>
+    <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">False</span>
+  <span style="color: #fb660a; font-weight: bold">else</span><span style="color: #ffffff">:</span>
+    <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">True</span>
+
+<span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">gravityChecker</span><span style="color: #ffffff">(intendedCoordinate):</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">### Calculate space below</span>
+  <span style="color: #ffffff">spaceBelow</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[None]</span> <span style="color: #ffffff">*</span> <span style="color: #0086f7; font-weight: bold">2</span>
+  <span style="color: #ffffff">spaceBelow[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">intendedCoordinate[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">+</span> <span style="color: #0086f7; font-weight: bold">1</span>
+  <span style="color: #ffffff">spaceBelow[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">intendedCoordinate[</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">]</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">### Is the coordinate at ground level</span>
+  <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(spaceBelow[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span> <span style="color: #ffffff">==</span> <span style="color: #0086f7; font-weight: bold">6</span><span style="color: #ffffff">):</span>
+    <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">True</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">### Check if there&#39;s a token below</span>
+  <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(isSpaceAvailable(spaceBelow)</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">False):</span>
+    <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">True</span>
+  <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">False</span>
+
+<span style="color: #ffffff">leaveLoop</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">False</span>
+<span style="color: #ffffff">turnCounter</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0</span>
+<span style="color: #fb660a; font-weight: bold">while</span><span style="color: #ffffff">(leaveLoop</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">False):</span>
+  <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(turnCounter</span> <span style="color: #ffffff">%</span> <span style="color: #0086f7; font-weight: bold">2</span> <span style="color: #ffffff">==</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">):</span>
+    <span style="color: #ffffff">printGameBoard()</span>
+    <span style="color: #fb660a; font-weight: bold">while</span> <span style="color: #ffffff">True:</span>
+      <span style="color: #ffffff">spacePicked</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">input(</span><span style="color: #0086d2">&quot;\nChoisissez un espace (exemple D5): &quot;</span><span style="color: #ffffff">)</span>
+      <span style="color: #ffffff">coordinate</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">coordinateParser(spacePicked)</span>
+      <span style="color: #fb660a; font-weight: bold">try</span><span style="color: #ffffff">:</span>
+        <span style="color: #008800; font-style: italic; background-color: #0f140f">### Check if the space is available</span>
+        <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(isSpaceAvailable(coordinate)</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gravityChecker(coordinate)):</span>
+          <span style="color: #ffffff">modifyArray(coordinate,</span> <span style="color: #0086d2">&#39;🔵&#39;</span><span style="color: #ffffff">)</span>
+          <span style="color: #fb660a; font-weight: bold">break</span>
+        <span style="color: #fb660a; font-weight: bold">else</span><span style="color: #ffffff">:</span>
+          <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;Pas un coordonné valide&quot;</span><span style="color: #ffffff">)</span>
+      <span style="color: #fb660a; font-weight: bold">except</span><span style="color: #ffffff">:</span>
+        <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;Une erreur s&#39;est produite. Veuillez réessayer.&quot;</span><span style="color: #ffffff">)</span>
+    <span style="color: #ffffff">winner</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">checkForWinner(</span><span style="color: #0086d2">&#39;🔵&#39;</span><span style="color: #ffffff">)</span>
+    <span style="color: #ffffff">turnCounter</span> <span style="color: #ffffff">+=</span> <span style="color: #0086f7; font-weight: bold">1</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">### It&#39;s the computers turn</span>
+  <span style="color: #fb660a; font-weight: bold">else</span><span style="color: #ffffff">:</span>
+    <span style="color: #fb660a; font-weight: bold">while</span> <span style="color: #ffffff">True:</span>
+      <span style="color: #ffffff">cpuChoice</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[random.choice(possibleLetters),</span> <span style="color: #ffffff">random.randint(</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">,</span><span style="color: #0086f7; font-weight: bold">5</span><span style="color: #ffffff">)]</span>
+      <span style="color: #ffffff">cpuCoordinate</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">coordinateParser(cpuChoice)</span>
+      <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(isSpaceAvailable(cpuCoordinate)</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">gravityChecker(cpuCoordinate)):</span>
+        <span style="color: #ffffff">modifyArray(cpuCoordinate,</span> <span style="color: #0086d2">&#39;🔴&#39;</span><span style="color: #ffffff">)</span>
+        <span style="color: #fb660a; font-weight: bold">break</span>
+    <span style="color: #ffffff">turnCounter</span> <span style="color: #ffffff">+=</span> <span style="color: #0086f7; font-weight: bold">1</span>
+    <span style="color: #ffffff">winner</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">checkForWinner(</span><span style="color: #0086d2">&#39;🔴&#39;</span><span style="color: #ffffff">)</span>
+
+  <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(winner):</span>
+    <span style="color: #ffffff">printGameBoard()</span>
+    <span style="color: #fb660a; font-weight: bold">break</span>
+</pre></td></tr></table></div>
+
+
+
+
+					</p>
 				</div>
 			</main>
 
@@ -76,63 +323,6 @@
 				<h3> Ce site a été conçu par Kent McDermid &copy; 2024 <a href="#top">↑</a>  </h3>
 			</footer>
 		</div>
-		<script>
-			// JavaScript code for the Tic Tac Toe game
-			const board = document.getElementById("board");
-			let currentPlayer = "X";
-			let gameBoard = ["", "", "", "", "", "", "", "", ""];
-		
-			function renderBoard() {
-				board.innerHTML = "";
-				for (let i = 0; i < 9; i++) {
-					const cell = document.createElement("div");
-					cell.classList.add("cell");
-					cell.dataset.index = i;
-					cell.addEventListener("click", handleCellClick);
-					cell.textContent = gameBoard[i];
-					board.appendChild(cell);
-				}
-			}
-		
-			function handleCellClick(event) {
-				const index = event.target.dataset.index;
-				if (gameBoard[index] === "") {
-					gameBoard[index] = currentPlayer;
-					renderBoard();
-					if (checkWinner()) {
-						alert(`Player ${currentPlayer} wins!`);
-						resetGame();
-					} else if (gameBoard.every(cell => cell !== "")) {
-						alert("It's a tie!");
-						resetGame();
-					} else {
-						currentPlayer = currentPlayer === "X" ? "O" : "X";
-					}
-				}
-			}
-		
-			function checkWinner() {
-				const winningCombinations = [
-					[0, 1, 2], [3, 4, 5], [6, 7, 8],
-					[0, 3, 6], [1, 4, 7], [2, 5, 8],
-					[0, 4, 8], [2, 4, 6]
-				];
-		
-				return winningCombinations.some(combination =>
-					gameBoard[combination[0]] !== "" &&
-					gameBoard[combination[0]] === gameBoard[combination[1]] &&
-					gameBoard[combination[1]] === gameBoard[combination[2]]
-				);
-			}
-		
-			function resetGame() {
-				gameBoard = ["", "", "", "", "", "", "", "", ""];
-				currentPlayer = "X";
-				renderBoard();
-			}
-		
-			renderBoard();
-		</script>
 	</body>
 	
 </html>
