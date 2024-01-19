@@ -12,36 +12,190 @@
 			<nav class="module">
 				<ul> 
 					<li><a href="index.html">Accueil</a></li>
-					<li><a href="algorithm.html">Algorithme d'Investissements</a><li>
 					<li><a href="python.html">Python</a><li>
 					<li><a href="java.html">Java</a><li>	
 					<li><a href="cplusplus.html">C++</a><li>		
+					<li><a href="algorithm.html">Partie Visuelle</a><li>
 					<li><a href="path.html">Chemin</a><li>
 				</ul>
 			</nav>
 			<main>
 				</div>
 				<div id="rightcontent" class="GradientBorder2">
-					<h2>Welcome To My Investment and Programming Showcase</h2>
+					<h2>Explications du Partie Visuel</h2>
 					<p>
-						Bienvenue! My name is Kent McDermid, and you've just entered my investment and programming showcase. Feel free to explore the fascinating intersection of finance, coding, and my journey as a programmer.
+						Mon partie visuel j’ai créé un site web qui démontre tout mes recherches et explications en forme d’un site de biographie en premier sur le page d'accueil, puis il y a 5 autres pages: un page sur Java, C++, Python, partie visuel, et chemin de carrière. L’information vas etre pas mal un sommaire de ce qui est dans le partie ecrit. Je vais montrer ce site web durant ma partie orale, et ça va servir comme aspect visuel de ma présentation et pour me guider et guider l'audience. J’ai programmé le site web moi même, sans l’aide des programmes comme wix.com ou squarespace. Tous les fichiers sont conçus par moi, et ils sont tous dans mon dépôt github qui me permet d'héberger le site web pour permettre à d'autres de le visiter. De l’autre côté en relation avec le prochaine partie de ma partie visuel l' algorithme d’investissements, je l’ai programmé en <span class="hidden-text">Python</span> à cause de sa bibliothèque vaste qui avait le module parfait pour ce projet. J’ai utilisé le module backtrader, et avec cette cadre j’ai  spécifiquement mis en œuvre trois stratégies: un simple croisement, un double croisement et une analyse du IFR. 
 					</p>
-					<h3 style="font-size: 23px" >Me  using the unity engine for past projects</h3>
-					<img src="images/MyStrategy NVDA.png" width="1150px" height="600px" />
-					
-					<h2>Why Did I Create This Showcase?</h2>
+					<h2>Strategie Simple Croisement</h2>
 					<p>
-						This website serves as the culmination of my capstone project, offering a glimpse into my skills in programming and investment. It not only represents the final project for my course but also acts as a canvas where I've applied my knowledge of HTML and CSS. Through this process, I've reflected on the projects undertaken during the semester, delving into the lessons learned and my aspirations for the future in these domains.
+						Le simple croisement veut simplement dire que si le prix d'un stock donné dépasse sa moyenne mobile simple de dix jours on lui achète car ça va peut être aller plus haut, et si sa souscrire dû moyenne mobile simple on vend car ça va peut être aller plus bas.
 					</p>
+					<h3 style="font-size: 23px" > Simple Croisement: NVIDIA</h3>
+					<img src="images/SimpleCross NVDA.png" width="1150px" height="600px" />
 
-					<h3 style="font-size: 23px" >Me  using the unity engine for past projects</h3>
-					<img src="images/SmaCross NVDA.png" width="1150px" height="600px" />
-					<h2>Areas Of Exploration</h2>
+					<h3 style="font-size: 23px" > Simple Croisement: Argent</h3>
+					<img src="images/SimpleCross Silver.png" width="1150px" height="600px" />
+					
+					<h3 style="font-size: 23px" > Simple Croisement: Disney</h3>
+					<img src="images/SimpleCross Disney.png" width="1150px" height="600px" />
+
+					<h2>Strategie Double Croisement</h2>
 					<p>
-						The navigation on the left guides you through different facets of my journey. The <strong><a id="linkhover" href="about.html">About</a></strong> page introduces you to me, highlighting my achievements and future ambitions. The <strong><a id="linkhover" href="portfolio.html">Portfolio</a></strong> page showcases code from this semester, including notable areas like my venture into artificial intelligence. My <strong><a id="linkhover" href="interest.html">Engineering</a></strong> page narrates my passion for engineering, its history in my life, and connects to the about page, unveiling my future plans in engineering.
+						Le double croisement est un peu plus compliqué, en tenant compte de deux moyennes différentes, l'une à court terme (20 jours) et l'autre à long terme (50 jours). Si le moyenne courte dépasse la moyenne longue, on achète car ça suggère la élan ascendante, et si le moyenne court souscrire le moyenne longue on vend, étant donné que ça suggère la élan descendante
 					</p>
-					<h3 style="font-size: 23px" >Me  using the unity engine for past projects</h3>
-					<img src="images/AdvancedStrategy NVDA.png" width="1150px" height="600px" />
+					<h3 style="font-size: 23px" > Double Croisement: NVIDIA</h3>
+					<img src="images/DoubleCross NVDA.png" width="1150px" height="600px" />
+
+					<h3 style="font-size: 23px" > Double Croisement: Argent</h3>
+					<img src="images/DoubleCross Silver.png" width="1150px" height="600px" />
+					
+					<h3 style="font-size: 23px" > Double Croisement: Disney</h3>
+					<img src="images/DoubleCross Disney.png" width="1150px" height="600px" />
+					
+					<h2>Strategie Analyze IFR</h2>
+					<p>
+						La stratégie la plus compliquée implique l’Indice de force relative (IFR) avec un Histogramme MACD. Pour les mis en termes simples, le IFR détecte la vitesse de changement d'une action et l'utilise pour déterminer si elle est surévaluée ou sous-évaluée en fonction de la rapidité avec laquelle elle a été achetée ou vendue. Si une action a été beaucoup achetée en peu de temps, elle reviendra généralement à un état stable, ce qui signifie qu'il faut la vendre avant qu'elle ne baisse et vice versa si elle a été trop vendue en peu de temps. Un histogramme MACD est une version plus compliquée du double croisement qui est transformée en un signal facile à utiliser. Tout simplement si on utilise ces deux indicateurs en parallèle on peut avoir un bon idée s' il y a du élan positive ou négative. 
+
+					</p>
+					<h3 style="font-size: 23px" > Simple Croisement: NVIDIA</h3>
+					<img src="images/RSI NVDA.png" width="1150px" height="600px" />
+
+					<h3 style="font-size: 23px" > Simple Croisement: Argent</h3>
+					<img src="images/RSI Silver.png" width="1150px" height="600px" />
+					
+					<h3 style="font-size: 23px" > Simple Croisement: Disney</h3>
+					<img src="images/RSI Disney.png" width="1150px" height="600px" />
+					<p>
+						Voici le code Python de ces strategies
+					</p>
+					
+					<!-- HTML generated using hilite.me --><div class="scroll"  style="background: #111111; word-break: normal !important;     word-wrap: normal !important;
+    white-space: pre !important; height:775px; width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">import</span> <span style="color: #ffffff">backtrader</span> <span style="color: #fb660a; font-weight: bold">as</span> <span style="color: #ffffff">bt</span>
+<span style="color: #fb660a; font-weight: bold">import</span> <span style="color: #ffffff">yfinance</span> <span style="color: #fb660a; font-weight: bold">as</span> <span style="color: #ffffff">yf</span>
+
+<span style="color: #ffffff">ticker</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">yf.Ticker(</span><span style="color: #0086d2">&#39;DIS&#39;</span><span style="color: #ffffff">)</span> <span style="color: #008800; font-style: italic; background-color: #0f140f">#or NVDA or SI=F</span>
+<span style="color: #ffffff">data</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">ticker.history(period=</span><span style="color: #0086d2">&#39;3y&#39;</span><span style="color: #ffffff">)</span>
+
+<span style="color: #008800; font-style: italic; background-color: #0f140f"># Save the data to a CSV file</span>
+<span style="color: #ffffff">data.to_csv(</span><span style="color: #0086d2">&#39;your_data.csv&#39;</span><span style="color: #ffffff">)</span>
+
+
+<span style="color: #fb660a; font-weight: bold">class</span> <span style="color: #ffffff">SingleCross(bt.SignalStrategy):</span>
+    <span style="color: #ffffff">params</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">((</span><span style="color: #0086d2">&#39;sma_period&#39;</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">10</span><span style="color: #ffffff">),)</span>
+
+    <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">__init__</span><span style="color: #ffffff">(self):</span>
+        <span style="color: #ffffff">sma</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">bt.indicators.SimpleMovingAverage(self.data.close,</span> <span style="color: #ffffff">period=self.params.sma_period)</span>
+        <span style="color: #ffffff">crossover</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">bt.indicators.CrossOver(self.data.close,</span> <span style="color: #ffffff">sma)</span>
+        <span style="color: #ffffff">self.signal_add(bt.SIGNAL_LONG,</span> <span style="color: #ffffff">crossover)</span>
+    <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">stop</span><span style="color: #ffffff">(self):</span>
+        <span style="color: #008800; font-style: italic; background-color: #0f140f"># Sell all remaining stocks at the end of the time window</span>
+        <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">self.position:</span>
+            <span style="color: #ffffff">self.close()</span>
+            <span style="color: #ffffff">print(</span><span style="color: #0086d2">&quot;Sell all remaining stocks at the end of the time window&quot;</span><span style="color: #ffffff">)</span>
+
+<span style="color: #fb660a; font-weight: bold">class</span> <span style="color: #ffffff">DoubleCross(bt.Strategy):</span>
+    <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">__init__</span><span style="color: #ffffff">(self):</span>
+        <span style="color: #008800; font-style: italic; background-color: #0f140f"># Create a reference to the closing prices</span>
+        <span style="color: #ffffff">self.close_prices</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">self.data.close</span>
+
+        <span style="color: #008800; font-style: italic; background-color: #0f140f"># Set the short and long moving average periods</span>
+        <span style="color: #ffffff">self.short_period</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">20</span>
+        <span style="color: #ffffff">self.long_period</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">50</span>
+
+        <span style="color: #008800; font-style: italic; background-color: #0f140f"># Create simple moving averages</span>
+        <span style="color: #ffffff">self.short_ma</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">bt.indicators.SimpleMovingAverage(self.close_prices,</span> <span style="color: #ffffff">period=self.short_period)</span>
+        <span style="color: #ffffff">self.long_ma</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">bt.indicators.SimpleMovingAverage(self.close_prices,</span> <span style="color: #ffffff">period=self.long_period)</span>
+
+        <span style="color: #008800; font-style: italic; background-color: #0f140f"># Set the threshold to control signal likelihood</span>
+        <span style="color: #ffffff">self.threshold</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0.01</span>
+
+    <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">next</span><span style="color: #ffffff">(self):</span>
+        <span style="color: #008800; font-style: italic; background-color: #0f140f"># Print date, close price, short MA, and long MA at each step</span>
+        <span style="color: #ffffff">dt</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">self.data.datetime.datetime(</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">)</span>
+        <span style="color: #ffffff">current_close</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">self.close_prices[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">]</span>
+        <span style="color: #ffffff">print(f</span><span style="color: #0086d2">&quot;Date: {dt}, Close: {current_close:.2f}, Short MA: {self.short_ma[0]:.2f}, Long MA: {self.long_ma[0]:.2f}&quot;</span><span style="color: #ffffff">)</span>
+
+        <span style="color: #008800; font-style: italic; background-color: #0f140f"># Check for a crossover with an adjusted threshold</span>
+        <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">self.short_ma</span> <span style="color: #ffffff">&gt;</span> <span style="color: #ffffff">(self.long_ma</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">(</span><span style="color: #0086f7; font-weight: bold">1</span> <span style="color: #ffffff">+</span> <span style="color: #ffffff">self.threshold)):</span>
+            <span style="color: #008800; font-style: italic; background-color: #0f140f"># If short MA crosses above long MA, generate a buy signal</span>
+            <span style="color: #ffffff">self.buy()</span>
+            <span style="color: #ffffff">print(</span><span style="color: #0086d2">&quot;Buy Signal&quot;</span><span style="color: #ffffff">)</span>
+
+        <span style="color: #fb660a; font-weight: bold">elif</span> <span style="color: #ffffff">self.short_ma</span> <span style="color: #ffffff">&lt;</span> <span style="color: #ffffff">(self.long_ma</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">(</span><span style="color: #0086f7; font-weight: bold">1</span> <span style="color: #ffffff">-</span> <span style="color: #ffffff">self.threshold)):</span>
+            <span style="color: #008800; font-style: italic; background-color: #0f140f"># If short MA crosses below long MA, generate a sell signal</span>
+            <span style="color: #ffffff">self.sell()</span>
+            <span style="color: #ffffff">print(</span><span style="color: #0086d2">&quot;Sell Signal&quot;</span><span style="color: #ffffff">)</span>
+
+    <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">stop</span><span style="color: #ffffff">(self):</span>
+        <span style="color: #008800; font-style: italic; background-color: #0f140f"># Sell all remaining stocks at the end of the time window</span>
+        <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">self.position:</span>
+            <span style="color: #ffffff">self.close()</span>
+            <span style="color: #ffffff">print(</span><span style="color: #0086d2">&quot;Sell all remaining stocks at the end of the time window&quot;</span><span style="color: #ffffff">)</span>
+
+<span style="color: #fb660a; font-weight: bold">class</span> <span style="color: #ffffff">RsiAnalysis(bt.Strategy):</span>
+    <span style="color: #ffffff">params</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">(</span>
+        <span style="color: #ffffff">(</span><span style="color: #0086d2">&#39;rsi_period&#39;</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">14</span><span style="color: #ffffff">),</span>
+        <span style="color: #ffffff">(</span><span style="color: #0086d2">&#39;macd_short_period&#39;</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">12</span><span style="color: #ffffff">),</span>
+        <span style="color: #ffffff">(</span><span style="color: #0086d2">&#39;macd_long_period&#39;</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">26</span><span style="color: #ffffff">),</span>
+        <span style="color: #ffffff">(</span><span style="color: #0086d2">&#39;macd_signal_period&#39;</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">9</span><span style="color: #ffffff">),</span>
+        <span style="color: #ffffff">(</span><span style="color: #0086d2">&#39;rsi_overbought&#39;</span><span style="color: #ffffff">,</span><span style="color: #0086f7; font-weight: bold">80</span><span style="color: #ffffff">),</span>
+        <span style="color: #ffffff">(</span><span style="color: #0086d2">&#39;rsi_oversold&#39;</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">20</span><span style="color: #ffffff">),</span>
+    <span style="color: #ffffff">)</span>
+
+    <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">__init__</span><span style="color: #ffffff">(self):</span>
+        <span style="color: #ffffff">self.rsi</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">bt.indicators.RelativeStrengthIndex(period=self.params.rsi_period)</span>
+        <span style="color: #ffffff">self.macd</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">bt.indicators.MACDHisto(</span>
+            <span style="color: #ffffff">period_me1=self.params.macd_short_period,</span>
+            <span style="color: #ffffff">period_me2=self.params.macd_long_period,</span>
+            <span style="color: #ffffff">period_signal=self.params.macd_signal_period</span>
+        <span style="color: #ffffff">)</span>
+
+    <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">next</span><span style="color: #ffffff">(self):</span>
+        <span style="color: #ffffff">print(</span><span style="color: #0086d2">&#39;RSI:&#39;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">self.rsi[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">])</span>
+        <span style="color: #ffffff">print(</span><span style="color: #0086d2">&#39;MACD:&#39;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">self.macd[</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">])</span>
+
+        <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">self.rsi</span> <span style="color: #ffffff">&lt;</span> <span style="color: #0086f7; font-weight: bold">60</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">self.macd</span> <span style="color: #ffffff">&gt;</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">:</span>
+            <span style="color: #ffffff">self.buy()</span>
+            <span style="color: #ffffff">print(</span><span style="color: #0086d2">&#39;Buy Signal&#39;</span><span style="color: #ffffff">)</span>
+
+        <span style="color: #fb660a; font-weight: bold">elif</span> <span style="color: #ffffff">self.rsi</span> <span style="color: #ffffff">&gt;</span> <span style="color: #0086f7; font-weight: bold">40</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">self.macd</span> <span style="color: #ffffff">&lt;</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">:</span>
+            <span style="color: #ffffff">self.sell()</span>
+            <span style="color: #ffffff">print(</span><span style="color: #0086d2">&#39;Sell Signal&#39;</span><span style="color: #ffffff">)</span>
+        
+<span style="color: #008800; font-style: italic; background-color: #0f140f"># Create a Backtrader Cerebro Engine</span>
+<span style="color: #ffffff">cerebro</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">bt.Cerebro()</span>
+
+<span style="color: #008800; font-style: italic; background-color: #0f140f"># Add data feed </span>
+<span style="color: #ffffff">data</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">bt.feeds.GenericCSVData(</span>
+    <span style="color: #ffffff">dataname=</span><span style="color: #0086d2">&#39;your_data.csv&#39;</span><span style="color: #ffffff">,</span>
+    <span style="color: #ffffff">datetime=</span><span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">,</span>
+    <span style="color: #ffffff">high=</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">,</span>
+    <span style="color: #ffffff">low=</span><span style="color: #0086f7; font-weight: bold">2</span><span style="color: #ffffff">,</span>
+    <span style="color: #ffffff">open=</span><span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">,</span>
+    <span style="color: #ffffff">close=</span><span style="color: #0086f7; font-weight: bold">4</span><span style="color: #ffffff">,</span>
+    <span style="color: #ffffff">volume=</span><span style="color: #0086f7; font-weight: bold">5</span><span style="color: #ffffff">,</span>
+    <span style="color: #ffffff">openinterest=-</span><span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">,</span>
+    <span style="color: #ffffff">dtformat=</span><span style="color: #0086d2">&#39;%Y-%m-%d %H:%M:%S%z&#39;</span>
+<span style="color: #ffffff">)</span>
+<span style="color: #ffffff">cerebro.adddata(data)</span>
+
+<span style="color: #ffffff">cerebro.addstrategy(SingleCross)</span> <span style="color: #008800; font-style: italic; background-color: #0f140f"># or DoulbeCross or RSIAnalysis</span>
+<span style="color: #008800; font-style: italic; background-color: #0f140f">#cerebro.addsizer(bt.sizers.AllInSizer, percents=50)</span>
+<span style="color: #008800; font-style: italic; background-color: #0f140f"># Set initial cash amount</span>
+<span style="color: #ffffff">cerebro.broker.set_cash(</span><span style="color: #0086f7; font-weight: bold">10000</span><span style="color: #ffffff">)</span>
+
+<span style="color: #008800; font-style: italic; background-color: #0f140f"># Print the starting cash amount</span>
+<span style="color: #ffffff">print(</span><span style="color: #0086d2">&#39;Starting Portfolio Value: %.2f&#39;</span> <span style="color: #ffffff">%</span> <span style="color: #ffffff">cerebro.broker.getvalue())</span>
+
+<span style="color: #008800; font-style: italic; background-color: #0f140f"># Run the backtest and plot the results</span>
+<span style="color: #ffffff">cerebro.run()</span>
+<span style="color: #ffffff">cerebro.plot()</span>
+<span style="color: #008800; font-style: italic; background-color: #0f140f">#cerebro.plot(style=&#39;candlestick&#39;, iplot=False)</span>
+
+<span style="color: #ffffff">print(</span><span style="color: #0086d2">&#39;Ending Portfolio Value: %.2f&#39;</span> <span style="color: #ffffff">%</span> <span style="color: #ffffff">cerebro.broker.getvalue())</span>
+</pre></div>
+
+
 				</div>
 			</main>
 			<footer>

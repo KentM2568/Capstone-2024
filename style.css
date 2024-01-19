@@ -45,11 +45,11 @@ header h1{
 }
 
 nav{
-	width: 1150px;
+	width: 1037.5px;
 	height: 50px;
 	line-height: 50px;
 	background: black;
-	padding-left: 50px;
+	padding-left: 162.5px;
 	border: none;
 	border-width: 4px 0 4px;
 	border-style: solid none;
@@ -316,5 +316,15 @@ footer a:hover{
 	transition: 700ms ease;
 	text-shadow:1px 1px 10px rgba(255,255,255, 0.9), 1px 1px 10px rgba(204,204,204,0.9);
 }
+.hidden-text {
+	font-size: 30px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+/* Show the text on hover */
+.hidden-text:hover {
+	opacity: 1;
+} 
 
 

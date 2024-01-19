@@ -15,7 +15,7 @@
 					<li><a href="python.html">Python</a><li>
 					<li><a href="java.html">Java</a><li>	
 					<li><a href="cplusplus.html">C++</a><li>		
-					<li><a href="algorithm.html">Algorithme d'Investissements</a><li>
+					<li><a href="algorithm.html">Partie Visuelle</a><li>
 					<li><a href="path.html">Chemin</a><li>
 				</ul>
 			</nav>
@@ -41,142 +41,10 @@
 
 					<h2>Démonstration</h2>
 					<p>
-						Voici du code Python pour un programme de Connect 4.
+						Voici du code Python pour un programme de Connect 4 contre des mouvements aléatoires.
 
 						<!-- HTML generated using hilite.me --><div class="scroll"  style="background: #111111; word-break: normal !important;     word-wrap: normal !important;
-    white-space: pre !important; height:775px; width:auto;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- 50
- 51
- 52
- 53
- 54
- 55
- 56
- 57
- 58
- 59
- 60
- 61
- 62
- 63
- 64
- 65
- 66
- 67
- 68
- 69
- 70
- 71
- 72
- 73
- 74
- 75
- 76
- 77
- 78
- 79
- 80
- 81
- 82
- 83
- 84
- 85
- 86
- 87
- 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">import</span> <span style="color: #ffffff">random</span>
+    white-space: pre !important; height:775px; width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">import</span> <span style="color: #ffffff">random</span>
 
 <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;Bienvenue à Connect Four, vous jouerez contre un ordinateur aléatoire.&quot;</span><span style="color: #ffffff">)</span>
 <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;----------------------------------------------------------------------&quot;</span><span style="color: #ffffff">)</span>
@@ -185,7 +53,7 @@
 <span style="color: #ffffff">gameBoard</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">],</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">,</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">]]</span>
 
 <span style="color: #ffffff">rows</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">6</span>
-<span style="color: #ffffff">cols</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">7</span>
+<span style="color: #ffffff">cols</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">7</span>	
 
 <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">printGameBoard</span><span style="color: #ffffff">():</span>
   <span style="color: #fb660a; font-weight: bold">print</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;\n     A    B    C    D    E    F    G  &quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">end=</span><span style="color: #0086d2">&quot;&quot;</span><span style="color: #ffffff">)</span>
@@ -309,12 +177,18 @@
   <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(winner):</span>
     <span style="color: #ffffff">printGameBoard()</span>
     <span style="color: #fb660a; font-weight: bold">break</span>
-</pre></td></tr></table></div>
-
-
+</pre></div>
 
 
 					</p>
+					<p>
+						Pour essayer vous meme, copier et coller le code dans un  <a id="linkhover" href="https://www.programiz.com/python-programming/online-compiler/ " target="_blank">compilateur python en ligne</a>.
+						<br>(Gardez à l'esprit que les compilateurs en ligne sont beaucoup plus susceptibles aux bogues que les compilateurs réels.)
+
+					</p>
+
+
+
 				</div>
 			</main>
 
